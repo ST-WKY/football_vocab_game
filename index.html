@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+<html lang="en" style="--left-goal-color: #ef4444; --left-goal-shadow: #991b1b; --right-goal-color: #3b82f6; --right-goal-shadow: #1e40af;"><head>
+  
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+    <script src="https://cpwebassets.codepen.io/assets/packs/js/authorizeDataCapture-ed3d4ec65f15225e39df.js"></script>
+
+  
+
+  <title>詞語足球賽 ⚽</title>
+
+    <link rel="canonical" href="https://codepen.io/STgame/pen/VYmryKL">
+  
+  
+  
+  
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-10{top:-2.5rem}.left-3{left:0.75rem}.right-0{right:0px}.right-3{right:0.75rem}.top-2{top:0.5rem}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[70\]{z-index:70}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-2\.5{margin-bottom:0.625rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:0.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-2\.5{margin-top:0.625rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2\.5{height:0.625rem}.h-4{height:1rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-\[70vh\]{height:70vh}.h-full{height:100%}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.max-h-44{max-height:11rem}.max-h-\[92vh\]{max-height:92vh}.w-0{width:0px}.w-10{width:2.5rem}.w-4{width:1rem}.w-48{width:12rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-\[40\%\]{width:40%}.w-\[70vw\]{width:70vw}.w-full{width:100%}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.min-w-\[200px\]{min-width:200px}.max-w-6xl{max-width:72rem}.max-w-\[46\%\]{max-width:46%}.max-w-\[80px\]{max-width:80px}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-none{max-width:none}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.max-w-\[85px\]{max-width:85px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.animate-\[fadeIn_0\.25s_ease-out\]{animation:fadeIn 0.25s ease-out}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.self-end{align-self:flex-end}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b-2{border-bottom-width:2px}.border-b-4{border-bottom-width:4px}.border-r-4{border-right-width:4px}.border-t{border-top-width:1px}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.border-amber-500\/60{border-color:rgb(245 158 11 / 0.6)}.border-blue-500{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-rose-400{--tw-border-opacity:1;border-color:rgb(251 113 133 / var(--tw-border-opacity, 1))}.border-sky-400{--tw-border-opacity:1;border-color:rgb(56 189 248 / var(--tw-border-opacity, 1))}.border-slate-500{--tw-border-opacity:1;border-color:rgb(100 116 139 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-900{--tw-border-opacity:1;border-color:rgb(15 23 42 / var(--tw-border-opacity, 1))}.border-slate-950{--tw-border-opacity:1;border-color:rgb(2 6 23 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-700{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.bg-blue-950\/95{background-color:rgb(23 37 84 / 0.95)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-700{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.bg-emerald-900{--tw-bg-opacity:1;background-color:rgb(6 78 59 / var(--tw-bg-opacity, 1))}.bg-indigo-700{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.bg-indigo-800{--tw-bg-opacity:1;background-color:rgb(55 48 163 / var(--tw-bg-opacity, 1))}.bg-indigo-900{--tw-bg-opacity:1;background-color:rgb(49 46 129 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-red-700{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.bg-red-950\/95{background-color:rgb(69 10 10 / 0.95)}.bg-rose-800{--tw-bg-opacity:1;background-color:rgb(159 18 57 / var(--tw-bg-opacity, 1))}.bg-rose-950{--tw-bg-opacity:1;background-color:rgb(76 5 25 / var(--tw-bg-opacity, 1))}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-sky-700{--tw-bg-opacity:1;background-color:rgb(3 105 161 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/40{background-color:rgb(15 23 42 / 0.4)}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/60{background-color:rgb(2 6 23 / 0.6)}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-slate-950\/85{background-color:rgb(2 6 23 / 0.85)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-1{padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-\[11px\]{font-size:11px}.text-\[6rem\]{font-size:6rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.leading-none{line-height:1}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-emerald-100\/80{color:rgb(209 250 229 / 0.8)}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.opacity-25{opacity:0.25}.opacity-50{opacity:0.5}.opacity-65{opacity:0.65}.opacity-100{opacity:1}.opacity-75{opacity:0.75}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-white{--tw-ring-opacity:1;--tw-ring-color:rgb(255 255 255 / var(--tw-ring-opacity, 1))}.ring-amber-400{--tw-ring-opacity:1;--tw-ring-color:rgb(251 191 36 / var(--tw-ring-opacity, 1))}.drop-shadow-\[0_2px_0_\#000\]{--tw-drop-shadow:drop-shadow(0 2px 0 #000);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_4px_0_\#000\]{--tw-drop-shadow:drop-shadow(0 4px 0 #000);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-slate-600:hover{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-800:hover{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-600:hover{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-800:hover{--tw-bg-opacity:1;background-color:rgb(55 48 163 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-500:hover{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-600:hover{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:text-amber-300:hover{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.focus\:border-amber-400:focus{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 768px){.md\:mt-0{margin-top:0px}.md\:flex{display:flex}.md\:h-16{height:4rem}.md\:h-5{height:1.25rem}.md\:h-64{height:16rem}.md\:w-16{width:4rem}.md\:w-5{width:1.25rem}.md\:w-56{width:14rem}.md\:w-64{width:16rem}.md\:w-\[25\%\]{width:25%}.md\:min-w-\[250px\]{min-width:250px}.md\:max-w-\[120px\]{max-width:120px}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:gap-3{gap:0.75rem}.md\:gap-8{gap:2rem}.md\:self-center{align-self:center}.md\:p-3{padding:0.75rem}.md\:p-4{padding:1rem}.md\:p-5{padding:1.25rem}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:px-4{padding-left:1rem;padding-right:1rem}.md\:py-2{padding-top:0.5rem;padding-bottom:0.5rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-\[6rem\]{font-size:6rem}.md\:text-\[8rem\]{font-size:8rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:w-\[20\%\]{width:20%}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:text-\[7rem\]{font-size:7rem}}</style></head>
+
+<body translate="no" class="select-none" data-new-gr-c-s-check-loaded="14.1342.0" data-gr-ext-installed="">
+  
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>像素足球爭霸戰｜構詞意識（AMA）言語治療訓練系統</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Press Start 2P, DotGothic16, Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&amp;family=Noto+Sans+TC:wght@500;700;900&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+  <!-- SheetJS (xlsx) CDN for Excel Export/Import -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <style>
+    :root {
+      --pixel-border: 4px solid #1e1b18;
+      --font-main: 'Noto Sans TC', sans-serif;
+      --font-pixel-zh: 'DotGothic16', 'Noto Sans TC', sans-serif;
+      --font-pixel-num: 'Press Start 2P', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-main);
+      background-color: #111827;
+      color: #fff;
+    }
+
+    /* Pixel Art / Minecraft Box Styling */
+    .pixel-box {
+      border: 4px solid #18181b;
+      box-shadow: 
+        inset -4px -4px 0px 0px rgba(0,0,0,0.35),
+        inset 4px 4px 0px 0px rgba(255,255,255,0.25),
+        0 6px 0 #09090b;
+      image-rendering: pixelated;
+    }
+
+    .pixel-panel-dark {
+      background-color: #1f2937;
+      border: 4px solid #09090b;
+      box-shadow: 
+        inset -4px -4px 0px 0px #111827,
+        inset 4px 4px 0px 0px #374151,
+        0 8px 0 rgba(0,0,0,0.6);
+    }
+
+    .pixel-btn {
+      position: relative;
+      border: 4px solid #09090b;
+      box-shadow: 
+        inset -4px -4px 0px 0px rgba(0,0,0,0.35),
+        inset 4px 4px 0px 0px rgba(255,255,255,0.35),
+        0 6px 0 #09090b;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.1s;
+      cursor: pointer;
+    }
+
+    .pixel-btn:hover:not(:disabled) {
+      filter: brightness(1.08);
+    }
+
+    .pixel-btn:active:not(:disabled) {
+      transform: translateY(5px);
+      box-shadow: 
+        inset -3px -3px 0px 0px rgba(0,0,0,0.4),
+        inset 3px 3px 0px 0px rgba(255,255,255,0.2),
+        0 1px 0 #09090b;
+    }
+
+    .pixel-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .font-pixel-num {
+      font-family: var(--font-pixel-num);
+    }
+
+    .font-pixel-zh {
+      font-family: var(--font-pixel-zh);
+      letter-spacing: 0.06em;
+    }
+
+    /* Dyslexia Friendly High-Legibility Word Display */
+    .dyslexia-word {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      line-height: 1.2;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Range Slider Styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: transparent;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 28px;
+      width: 28px;
+      border-radius: 50%;
+      background: #fcd34d;
+      cursor: pointer;
+      margin-top: -10px;
+      border: 3px solid #0f172a;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 10px;
+      cursor: pointer;
+      background: #475569;
+      border-radius: 5px;
+      border: 2px solid #0f172a;
+    }
+
+    /* Minecraft / RPG Pixel Grass Pitch Background */
+    .soccer-pitch {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #2e7d32;
+      background-image: 
+        /* Mow stripes */
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.05) 0px,
+          rgba(255, 255, 255, 0.05) 80px,
+          rgba(0, 0, 0, 0.05) 80px,
+          rgba(0, 0, 0, 0.05) 160px
+        ),
+        /* Pixel block texture */
+        radial-gradient(rgba(255,255,255,0.06) 2px, transparent 0);
+      background-size: 160px 100%, 16px 16px;
+      overflow: hidden;
+    }
+
+    /* Stadium Crowd Top Banner */
+    .stadium-stands {
+      background: 
+        linear-gradient(180deg, #0f172a 0%, #1e293b 70%, #14532d 100%);
+      border-bottom: 6px solid #e2e8f0;
+    }
+
+    /* Pitch White Lines */
+    .pitch-line-center {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 6px;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.55);
+      pointer-events: none;
+    }
+
+    .pitch-circle-center {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      width: 38vmin;
+      height: 38vmin;
+      transform: translate(-50%, -50%);
+      border: 6px solid rgba(255, 255, 255, 0.55);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Goal Posts & Pixel Net 
+       修改重點：top 向上延伸覆蓋大約 1/12 的位置，同時 bottom 依然零罅隙貼齊下方計分板 */
+    .goal-container {
+      position: absolute;
+      top: -5vh; /* 往上延伸，覆蓋上方計分板背後大約 1/12 區域 */
+      bottom: -4px; /* 覆蓋下方計分板邊框，達成零罅隙 */
+      width: clamp(140px, 16vw, 250px); 
+      z-index: 15;
+      pointer-events: none;
+    }
+
+    .goal-left {
+      left: 12px; 
+      border-top: 14px solid #f8fafc;
+      border-bottom: 14px solid #f8fafc;
+      border-left: 16px solid var(--left-goal-color, #ef4444);
+      box-shadow: -8px 0 0 var(--left-goal-shadow, #991b1b), inset 0 0 35px rgba(0,0,0,0.55);
+    }
+
+    .goal-right {
+      right: 12px; 
+      border-top: 14px solid #f8fafc;
+      border-bottom: 14px solid #f8fafc;
+      border-right: 16px solid var(--right-goal-color, #3b82f6);
+      box-shadow: 8px 0 0 var(--right-goal-shadow, #1e40af), inset 0 0 35px rgba(0,0,0,0.55);
+    }
+
+    .goal-net {
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.4) 2px, transparent 2px),
+        linear-gradient(to bottom, rgba(255,255,255,0.4) 2px, transparent 2px);
+      background-size: 20px 20px;
+      background-color: rgba(15, 23, 42, 0.32);
+    }
+
+    /* Goal Shake & Net Ripple Animation */
+    @keyframes goalImpactShake {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      15% { transform: translate(-14px, -10px) scale(1.08); filter: brightness(1.8); }
+      30% { transform: translate(12px, 10px) scale(0.96); }
+      45% { transform: translate(-12px, 8px) scale(1.05); filter: brightness(1.5); }
+      60% { transform: translate(10px, -8px) scale(0.98); }
+      75% { transform: translate(-6px, 4px) scale(1.02); }
+    }
+
+    .goal-hit {
+      animation: goalImpactShake 0.65s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    }
+
+    /* Enlarged Screen Proportion Soccer Ball - top: 60% prevents overlap with top Jumbotron */
+    #soccer-ball-wrapper {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      z-index: 25;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .soccer-ball-ring-container {
+      position: relative;
+      width: 38vw; 
+      height: 38vw;
+      min-width: 200px;
+      min-height: 200px;
+      max-width: 38vh; 
+      max-height: 38vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circular Red Perimeter Countdown Ring */
+    .ball-countdown-svg {
+      position: absolute;
+      inset: -4%;
+      width: 108%;
+      height: 108%;
+      transform: rotate(-90deg);
+      pointer-events: none;
+      z-index: 30;
+      filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.85));
+    }
+
+    /* Realistic Soccer Ball Redesign */
+    .soccer-ball {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #ffffff 5%, #e5e7eb 40%, #9ca3af 75%, #374151 100%);
+      border: 4px solid #0f172a;
+      box-shadow: 
+        inset -15px -15px 30px rgba(0, 0, 0, 0.65),
+        inset 10px 10px 20px rgba(255, 255, 255, 0.9),
+        0 25px 35px rgba(0, 0, 0, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Authentic Classic Soccer Pattern framing the giant center */
+    .soccer-pattern {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.95;
+    }
+
+    /* Huge White Circle Center for Displaying Words Clearly (Radius 82% with whitespace-nowrap) */
+    .ball-word-circle {
+      position: relative;
+      z-index: 5;
+      width: 82%;
+      height: 82%;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 4px solid #94a3b8;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5), inset 0 2px 15px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      text-align: center;
+      white-space: nowrap; /* Strictly prevents vertical text wrapping */
+    }
+
+    .ball-shadow {
+      width: 28vmin;
+      min-width: 170px;
+      height: 3.5vmin;
+      min-height: 25px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    /* Animation 1: Floating gently in Stage 1 */
+    @keyframes ballFloat {
+      0%, 100% { transform: translate(-50%, -50%); }
+      50% { transform: translate(-50%, -56%); }
+    }
+
+    .anim-float {
+      animation: ballFloat 2.2s ease-in-out infinite;
+    }
+
+    /* Animation 2: Hop in place when ✅ is clicked.
+       The ball rests at exactly its original position (-50%, -50%) */
+    @keyframes ballHopInPlace {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      40% { transform: translate(-50%, -65%) scale(1.05, 0.95); }
+      60% { transform: translate(-50%, -45%) scale(0.95, 1.05); }
+      80% { transform: translate(-50%, -52%) scale(1.02, 0.98); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .anim-hop {
+      animation: ballHopInPlace 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .state-in-place {
+      transform: translate(-50%, -50%) scale(1) !important;
+    }
+
+    /* Animation 3: Explode / Vanish when timer runs out */
+    @keyframes ballExplodeAnim {
+      0% { transform: translate(-50%, -50%) scale(1); filter: brightness(1); opacity: 1; }
+      20% { transform: translate(-50%, -50%) scale(1.22) rotate(8deg); filter: brightness(2) hue-rotate(-30deg); }
+      40% { transform: translate(-50%, -50%) scale(0.85) rotate(-8deg); filter: brightness(2.5); }
+      65% { transform: translate(-50%, -50%) scale(1.55); opacity: 0.7; filter: contrast(200%) brightness(3); }
+      100% { transform: translate(-50%, -50%) scale(2.1); opacity: 0; }
+    }
+
+    .anim-explode {
+      animation: ballExplodeAnim 0.7s ease-out forwards;
+    }
+
+    /* ================= DIVERSE SHOOTING ANIMATIONS TO RIGHT GOAL ================= */
+    /* Target Goal Center for Right is precisely calculated: calc(-50% + 42vw), calc(-50% - 8vh) */
+    
+    /* 1. High Lob (高空拋物線) */
+    @keyframes shootRight1 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      40% { transform: translate(calc(-50% + 15vw), calc(-50% - 35vh)) scale(0.6) rotate(360deg); opacity: 1; }
+      90% { transform: translate(calc(-50% + 40vw), calc(-50% - 6vh)) scale(0.15) rotate(800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% + 42vw), calc(-50% - 8vh)) scale(0) rotate(900deg); opacity: 0; }
+    }
+    .anim-shoot-right-1 { animation: shootRight1 0.75s cubic-bezier(0.3, 0.5, 0.4, 1) forwards; }
+
+    /* 2. Fast Drive (快速直線抽射) */
+    @keyframes shootRight2 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      50% { transform: translate(calc(-50% + 20vw), calc(-50% - 15vh)) scale(0.5) rotate(400deg); opacity: 1; }
+      90% { transform: translate(calc(-50% + 40vw), calc(-50% - 6vh)) scale(0.15) rotate(800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% + 42vw), calc(-50% - 8vh)) scale(0) rotate(900deg); opacity: 0; }
+    }
+    .anim-shoot-right-2 { animation: shootRight2 0.75s cubic-bezier(0.5, 0, 1, 1) forwards; }
+
+    /* 3. Swerve / Curve Shot (曲墜香蕉球) */
+    @keyframes shootRight3 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      30% { transform: translate(calc(-50% + 10vw), calc(-50% - 25vh)) scale(0.7) rotate(300deg); opacity: 1; }
+      70% { transform: translate(calc(-50% + 30vw), calc(-50% + 5vh)) scale(0.4) rotate(600deg); opacity: 1; }
+      90% { transform: translate(calc(-50% + 40vw), calc(-50% - 6vh)) scale(0.15) rotate(800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% + 42vw), calc(-50% - 8vh)) scale(0) rotate(950deg); opacity: 0; }
+    }
+    .anim-shoot-right-3 { animation: shootRight3 0.75s ease-in-out forwards; }
+
+    /* ================= DIVERSE SHOOTING ANIMATIONS TO LEFT GOAL ================= */
+    /* Target Goal Center for Left is precisely calculated: calc(-50% - 42vw), calc(-50% - 8vh) */
+
+    /* 1. High Lob (高空拋物線) */
+    @keyframes shootLeft1 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      40% { transform: translate(calc(-50% - 15vw), calc(-50% - 35vh)) scale(0.6) rotate(-360deg); opacity: 1; }
+      90% { transform: translate(calc(-50% - 40vw), calc(-50% - 6vh)) scale(0.15) rotate(-800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% - 42vw), calc(-50% - 8vh)) scale(0) rotate(-900deg); opacity: 0; }
+    }
+    .anim-shoot-left-1 { animation: shootLeft1 0.75s cubic-bezier(0.3, 0.5, 0.4, 1) forwards; }
+
+    /* 2. Fast Drive (快速直線抽射) */
+    @keyframes shootLeft2 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      50% { transform: translate(calc(-50% - 20vw), calc(-50% - 15vh)) scale(0.5) rotate(-400deg); opacity: 1; }
+      90% { transform: translate(calc(-50% - 40vw), calc(-50% - 6vh)) scale(0.15) rotate(-800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% - 42vw), calc(-50% - 8vh)) scale(0) rotate(-900deg); opacity: 0; }
+    }
+    .anim-shoot-left-2 { animation: shootLeft2 0.75s cubic-bezier(0.5, 0, 1, 1) forwards; }
+
+    /* 3. Swerve / Curve Shot (曲墜香蕉球) */
+    @keyframes shootLeft3 {
+      0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+      30% { transform: translate(calc(-50% - 10vw), calc(-50% - 25vh)) scale(0.7) rotate(-300deg); opacity: 1; }
+      70% { transform: translate(calc(-50% - 30vw), calc(-50% + 5vh)) scale(0.4) rotate(-600deg); opacity: 1; }
+      90% { transform: translate(calc(-50% - 40vw), calc(-50% - 6vh)) scale(0.15) rotate(-800deg); opacity: 1; }
+      100% { transform: translate(calc(-50% - 42vw), calc(-50% - 8vh)) scale(0) rotate(-950deg); opacity: 0; }
+    }
+    .anim-shoot-left-3 { animation: shootLeft3 0.75s ease-in-out forwards; }
+
+    /* Score Pop-up Floating Animation */
+    @keyframes floatScore {
+      0% { opacity: 0; transform: translateY(10px) scale(0.7); }
+      25% { opacity: 1; transform: translateY(-12px) scale(1.15); }
+      80% { opacity: 1; transform: translateY(-28px) scale(1); }
+      100% { opacity: 0; transform: translateY(-40px) scale(0.9); }
+    }
+
+    .score-pop {
+      animation: floatScore 1.2s ease-out forwards;
+    }
+
+    /* Custom Scrollbar for Admin Panel */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #111827; }
+    ::-webkit-scrollbar-thumb { background: #4b5563; border: 2px solid #111827; }
+    ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+  </style>
+
+
+
+  <!-- ==================== TOP GLOBAL UTILITY BAR ==================== -->
+  <div class="fixed top-2 right-3 z-50 flex items-center gap-2 pointer-events-auto">
+    <!-- 全螢幕切換按鈕 -->
+    <button id="btn-fullscreen-toggle" onclick="toggleFullScreen()" class="pixel-btn bg-indigo-800 hover:bg-indigo-700 text-white px-3 py-1.5 text-sm font-bold flex items-center gap-1.5" title="全螢幕切換">
+      <span id="fs-icon" class="text-lg leading-none">⛶</span>
+      <span id="fs-label" class="hidden sm:inline whitespace-nowrap">全螢幕</span>
+    </button>
+    
+    <button id="btn-sound-toggle" onclick="toggleSound()" class="pixel-btn bg-slate-800 text-amber-300 px-3 py-1.5 text-sm font-bold flex items-center gap-1.5" title="音效開關">
+      <span id="sound-icon">🔊</span>
+      <span id="sound-label" class="hidden sm:inline whitespace-nowrap">音效開啟</span>
+    </button>
+    <button id="btn-back-menu" onclick="confirmReturnToMenu()" class="pixel-btn bg-rose-800 text-white px-3 py-1.5 text-sm font-bold flex items-center gap-1.5 whitespace-nowrap hidden">
+      <span>🏠</span>
+      <span>返回主頁</span>
+    </button>
+  </div>
+
+  <!-- ==================== TOP-LEFT HUD (PROGRESS & JUMP CHARACTERS) ==================== -->
+  <div id="top-left-hud" class="fixed top-2 left-3 z-50 flex flex-col gap-2 pointer-events-auto hidden">
+    <!-- Progress Bar -->
+    <div class="pixel-panel-dark bg-slate-900/90 p-2 border-2 border-slate-600 w-48 md:w-56">
+      <div class="flex justify-between text-xs md:text-sm text-emerald-300 font-bold mb-1">
+        <span>任務進度</span>
+        <span id="hud-progress-text">2 / 3</span>
+      </div>
+      <div class="w-full bg-slate-800 h-2.5 border border-slate-700">
+        <div id="hud-progress-bar" class="bg-emerald-500 h-full w-0 transition-all duration-300" style="width: 66.6667%;"></div>
+      </div>
+    </div>
+    <!-- Mini Soccer Balls for Character Jump -->
+    <div id="hud-char-jump" class="flex flex-wrap gap-2"><button class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg border-2 border-slate-950 shadow-md transform hover:scale-110 transition text-slate-900 ring-2 ring-amber-400" style="background: radial-gradient(circle at 35% 35%, rgb(255, 255, 255) 5%, rgb(229, 231, 235) 40%, rgb(156, 163, 175) 75%, rgb(55, 65, 81) 100%);"><span style="z-index: 10; text-shadow: 0 0 4px white;">事</span></button></div>
+  </div>
+
+  <!-- ==================== SCREEN 1: MAIN MENU & PRE-GAME SETUP ==================== -->
+  <section id="screen-menu" class="w-full h-full soccer-pitch flex flex-col justify-between p-4 md:p-6 overflow-y-auto">
+    <!-- Decorative Pitch Lines -->
+    <div class="pitch-line-center opacity-25"></div>
+    <div class="pitch-circle-center opacity-25"></div>
+
+    <!-- Header Title -->
+    <header class="relative z-10 text-center pt-1">
+      <div class="inline-block pixel-panel-dark px-6 py-2.5 mb-1 mt-8 md:mt-0">
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-2xl md:text-3xl">⚽</span>
+          <h1 id="main-site-title" class="text-xl md:text-3xl font-black tracking-wider text-amber-400 drop-shadow-[0_4px_0_#000]">詞語足球賽 ⚽</h1>
+          <span class="text-2xl md:text-3xl">🏆</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Setup Card -->
+    <main class="relative z-10 max-w-6xl w-full mx-auto my-auto pixel-panel-dark p-4 md:p-5 text-white">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        
+        <!-- Left Column: Step 1 (Target Characters) & Step 2 (Team & Goal Customization) -->
+        <div class="lg:col-span-7 flex flex-col justify-between gap-4">
+          
+          <!-- Step 1: Select Target Characters -->
+          <div class="bg-slate-900/90 border-4 border-slate-700 p-3.5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-slate-700 pb-2 mb-2.5">
+                <h2 class="text-base md:text-lg font-black text-amber-300 flex items-center gap-2">
+                  <span class="bg-amber-400 text-slate-950 px-2 py-0.5 text-xs font-pixel-num">1</span>
+                  選擇課堂「目標單字」
+                </h2>
+                <div class="flex gap-2">
+                  <button onclick="selectAllChars(true)" class="text-xs bg-slate-700 hover:bg-slate-600 px-2.5 py-1 font-bold border border-slate-500 whitespace-nowrap">全選</button>
+                  <button onclick="selectAllChars(false)" class="text-xs bg-slate-700 hover:bg-slate-600 px-2.5 py-1 font-bold border border-slate-500 whitespace-nowrap">取消全選</button>
+                </div>
+              </div>
+              
+              <!-- Target Character Grid -->
+              <div id="menu-char-list" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-h-44 overflow-y-auto pr-1"><div class="pixel-btn p-3 flex items-center justify-between transition bg-emerald-700 border-amber-400 text-white">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-amber-50 text-slate-950 border-2 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              事
+            </div>
+            <div class="text-left">
+              <div class="font-black text-base">目標字：事</div>
+              <div class="text-xs text-emerald-200">共 3 個詞語</div>
+            </div>
+          </div>
+          <div class="text-xl">✅</div>
+        </div><div class="pixel-btn p-3 flex items-center justify-between transition bg-slate-800 border-slate-950 text-slate-300 opacity-75">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-amber-50 text-slate-950 border-2 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              法
+            </div>
+            <div class="text-left">
+              <div class="font-black text-base">目標字：法</div>
+              <div class="text-xs text-slate-400">共 3 個詞語</div>
+            </div>
+          </div>
+          <div class="text-xl">⬜</div>
+        </div><div class="pixel-btn p-3 flex items-center justify-between transition bg-slate-800 border-slate-950 text-slate-300 opacity-75">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-amber-50 text-slate-950 border-2 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              場
+            </div>
+            <div class="text-left">
+              <div class="font-black text-base">目標字：場</div>
+              <div class="text-xs text-slate-400">共 3 個詞語</div>
+            </div>
+          </div>
+          <div class="text-xl">⬜</div>
+        </div><div class="pixel-btn p-3 flex items-center justify-between transition bg-slate-800 border-slate-950 text-slate-300 opacity-75">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-amber-50 text-slate-950 border-2 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              員
+            </div>
+            <div class="text-left">
+              <div class="font-black text-base">目標字：員</div>
+              <div class="text-xs text-slate-400">共 3 個詞語</div>
+            </div>
+          </div>
+          <div class="text-xl">⬜</div>
+        </div></div>
+            </div>
+
+            <div class="mt-2.5 pt-2 border-t border-slate-800 flex items-center justify-between text-xs md:text-sm text-emerald-300 font-bold">
+              <span id="menu-selected-summary">已選擇 1 個目標單字（題庫共 3 詞，本局將抽選 3 詞）</span>
+            </div>
+          </div>
+
+          <!-- Step 2: Team Names & Goal Colors Customization -->
+          <div class="bg-slate-900/90 border-4 border-slate-700 p-3.5">
+            <h2 class="text-base md:text-lg font-black text-amber-300 flex items-center gap-2 mb-2.5">
+              <span class="bg-amber-400 text-slate-950 px-2 py-0.5 text-xs font-pixel-num">2</span>
+              設定左右兩隊「隊伍名稱」與「代表顏色」
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Left Team Config -->
+              <div class="bg-slate-950 border-2 border-slate-700 p-2.5">
+                <div class="text-xs font-bold text-slate-300 mb-1.5">👈 左方隊伍名稱與顏色</div>
+                <input id="input-team-left-name" type="text" maxlength="8" value="紅隊" oninput="updateTeamConfig('left', 'name', this.value)" class="w-full bg-slate-900 border-2 border-slate-600 focus:border-amber-400 px-2.5 py-1.5 text-base font-black text-white mb-2 outline-none" placeholder="輸入隊名">
+                <div class="grid grid-cols-4 gap-1.5" id="color-picker-left">
+                  <button onclick="updateTeamConfig('left', 'color', 'red')" data-color="red" class="pixel-btn py-1.5 text-xs font-black bg-red-600 text-white opacity-100 ring-2 ring-white scale-105">紅色</button>
+                  <button onclick="updateTeamConfig('left', 'color', 'blue')" data-color="blue" class="pixel-btn py-1.5 text-xs font-black bg-blue-600 text-white opacity-50">藍色</button>
+                  <button onclick="updateTeamConfig('left', 'color', 'yellow')" data-color="yellow" class="pixel-btn py-1.5 text-xs font-black bg-amber-500 text-slate-950 opacity-50">黃色</button>
+                  <button onclick="updateTeamConfig('left', 'color', 'green')" data-color="green" class="pixel-btn py-1.5 text-xs font-black bg-emerald-600 text-white opacity-50">綠色</button>
+                </div>
+              </div>
+
+              <!-- Right Team Config -->
+              <div class="bg-slate-950 border-2 border-slate-700 p-2.5">
+                <div class="text-xs font-bold text-slate-300 mb-1.5">👉 右方隊伍名稱與顏色</div>
+                <input id="input-team-right-name" type="text" maxlength="8" value="藍隊" oninput="updateTeamConfig('right', 'name', this.value)" class="w-full bg-slate-900 border-2 border-slate-600 focus:border-amber-400 px-2.5 py-1.5 text-base font-black text-white mb-2 outline-none" placeholder="輸入隊名">
+                <div class="grid grid-cols-4 gap-1.5" id="color-picker-right">
+                  <button onclick="updateTeamConfig('right', 'color', 'red')" data-color="red" class="pixel-btn py-1.5 text-xs font-black bg-red-600 text-white opacity-50">紅色</button>
+                  <button onclick="updateTeamConfig('right', 'color', 'blue')" data-color="blue" class="pixel-btn py-1.5 text-xs font-black bg-blue-600 text-white opacity-100 ring-2 ring-white scale-105">藍色</button>
+                  <button onclick="updateTeamConfig('right', 'color', 'yellow')" data-color="yellow" class="pixel-btn py-1.5 text-xs font-black bg-amber-500 text-slate-950 opacity-50">黃色</button>
+                  <button onclick="updateTeamConfig('right', 'color', 'green')" data-color="green" class="pixel-btn py-1.5 text-xs font-black bg-emerald-600 text-white opacity-50">綠色</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Step 3 (Word Count Slider), Step 4 (Timer Slider), Start Button -->
+        <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+          
+          <!-- Step 3: Word Count Slider (1-5) -->
+          <div class="bg-slate-900/90 border-4 border-slate-700 p-3.5">
+            <h2 class="text-base md:text-lg font-black text-sky-300 flex items-center gap-2 mb-2.5">
+              <span class="bg-sky-400 text-slate-950 px-2 py-0.5 text-xs font-pixel-num">3</span>
+              設定隨機出現詞語數量 (1–5)
+            </h2>
+            <div class="flex flex-col items-center gap-3 pt-2">
+              <input type="range" id="setup-word-count-slider" min="1" max="5" step="1" value="5" oninput="updateSetupWordCountSlider(this.value)">
+              <div class="text-3xl font-black text-sky-400 mt-2"><span id="setup-word-count-display">5</span> <span class="text-xl text-slate-300">個</span></div>
+            </div>
+          </div>
+
+          <!-- Step 4: Countdown Timer Slider (3–10 seconds) -->
+          <div class="bg-slate-900/90 border-4 border-slate-700 p-3.5">
+            <h2 class="text-base md:text-lg font-black text-emerald-300 flex items-center gap-2 mb-2.5">
+              <span class="bg-emerald-400 text-slate-950 px-2 py-0.5 text-xs font-pixel-num">4</span>
+              設定讀出詞語倒數秒數 (3–10秒)
+            </h2>
+            <div class="flex flex-col items-center gap-3 pt-2">
+              <input type="range" id="setup-timer-slider" min="3" max="10" step="1" value="8" oninput="updateSetupTimerSlider(this.value)">
+              <div class="text-3xl font-black text-emerald-400 mt-2"><span id="setup-timer-display">8</span> <span class="text-xl text-slate-300">秒</span></div>
+            </div>
+          </div>
+
+          <!-- Step 5: Start Match Button -->
+          <button onclick="startGameMatch()" class="pixel-btn bg-amber-500 hover:bg-amber-400 text-slate-950 py-4 px-6 text-2xl font-black tracking-widest flex items-center justify-center gap-3 whitespace-nowrap">
+            <span>⚽</span>
+            <span>開始遊戲 START</span>
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Bottom Bar with Discreet Admin Entry -->
+    <footer class="relative z-10 flex items-center justify-end text-xs text-emerald-100/80 px-2 pt-1">
+      <button onclick="openPasswordModal()" class="opacity-65 hover:opacity-100 transition bg-slate-900/80 border-2 border-slate-600 px-3 py-1.5 text-slate-300 hover:text-amber-300 font-bold flex items-center gap-1.5 whitespace-nowrap">
+        <span>⚙️</span>
+        <span>後台管理</span>
+      </button>
+    </footer>
+  </section>
+
+  <!-- ==================== SCREEN 2: ACTIVE GAME STADIUM ==================== -->
+  <section id="screen-game" class="w-full h-full flex flex-col justify-between soccer-pitch relative hidden">
+    
+    <!-- Pitch Center Markings -->
+    <div class="pitch-line-center"></div>
+    <div class="pitch-circle-center"></div>
+
+    <!-- ==================== TOP JUMBOTRON (寬度精準貼合左右龍門內側) ==================== -->
+    <header class="relative z-30 mx-auto mt-2 flex justify-center pointer-events-auto" style="height: 28vh; min-height: 150px; max-height: 300px; width: calc(100% - 24px - 2 * clamp(140px, 16vw, 250px));">
+      <div class="w-full h-full pixel-panel-dark bg-slate-950 p-2 md:p-3 border-4 border-amber-400 flex flex-col shadow-2xl">
+        
+        <!-- Stage 1 Blank Screen (No text hints or stage labels) -->
+        <div id="jumbotron-stage1" class="w-full h-full bg-slate-900 border-2 border-slate-800 items-center justify-center flex">
+          <div class="w-6 h-6 rounded-full bg-slate-800 border-2 border-slate-700 animate-pulse"></div>
+        </div>
+
+        <!-- Stage 2 Hint Images Screen: ONLY [Image 1] ➕ [Image 2], enlarged max-width -->
+        <div id="jumbotron-stage2" class="w-full h-full bg-slate-900 border-2 border-amber-500/60 px-2 py-1.5 md:px-4 md:py-2 items-center justify-center gap-3 md:gap-8 hidden">
+          <!-- Image 1 Only -->
+          <div class="h-full flex-1 max-w-[46%] bg-slate-800 border-2 border-slate-600 p-1.5 flex items-center justify-center overflow-hidden">
+            <img id="jumbo-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIBWfvA6yiqtsE1hIdnzQBFR4K3bT5FDXK-k7W6wq10n-cxQau_7r1tnr&amp;s=10" alt="" onerror="this.src=createFallbackSVG('')" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Big Plus Sign -->
+          <div class="shrink-0 flex items-center justify-center">
+            <div class="w-10 h-10 md:w-16 md:h-16 rounded-full bg-amber-400 text-slate-950 border-4 border-slate-950 flex items-center justify-center text-2xl md:text-4xl font-black shadow-lg animate-pulse">
+              ➕
+            </div>
+          </div>
+
+          <!-- Image 2 Only -->
+          <div class="h-full flex-1 max-w-[46%] bg-slate-800 border-2 border-slate-600 p-1.5 flex items-center justify-center overflow-hidden">
+            <img id="jumbo-img2" src="https://i.imgur.com/v7kDbZ5.jpeg" alt="" onerror="this.src=createFallbackSVG('')" class="w-full h-full object-contain">
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==================== CENTER PITCH: SOCCER BALL & GOALS ==================== -->
+    <main class="relative flex-1 w-full flex items-center justify-center pointer-events-none">
+      
+      <!-- LEFT GOAL (Attached perfectly to Top and Bottom scoreboards) -->
+      <div id="goal-left" class="goal-container goal-left flex items-center justify-center">
+        <div class="goal-net flex items-center justify-center">
+          <span id="goal-left-label" class="bg-red-700 text-white text-lg md:text-2xl font-black px-4 py-2 border-4 border-white shadow-lg whitespace-nowrap">A</span>
+        </div>
+      </div>
+
+      <!-- RIGHT GOAL (Attached perfectly to Top and Bottom scoreboards) -->
+      <div id="goal-right" class="goal-container goal-right flex items-center justify-center">
+        <div class="goal-net flex items-center justify-center">
+          <span id="goal-right-label" class="bg-blue-700 text-white text-lg md:text-2xl font-black px-4 py-2 border-4 border-white shadow-lg whitespace-nowrap">B</span>
+        </div>
+      </div>
+
+      <!-- Center Soccer Ball + Perimeter Red Countdown Ring -->
+      <div id="soccer-ball-wrapper" class="anim-float">
+        <div class="soccer-ball-ring-container">
+          
+          <!-- Circular Red Perimeter Countdown Bar -->
+          <svg id="ball-countdown-svg" class="ball-countdown-svg" viewBox="0 0 240 240">
+            <circle cx="120" cy="120" r="112" fill="none" stroke="rgba(15, 23, 42, 0.45)" stroke-width="12"></circle>
+            <circle id="ball-ring-progress" cx="120" cy="120" r="112" fill="none" stroke="#ef4444" stroke-width="12" stroke-linecap="round" stroke-dasharray="703.72" stroke-dashoffset="0" style="stroke-dashoffset: 450.695;"></circle>
+          </svg>
+
+          <!-- Realistic + Pixel Soccer Ball Redesign (Classic 5-way Pentagon Rim) -->
+          <div id="soccer-ball" class="soccer-ball">
+            
+            <!-- Authentic Classic Soccer Pattern framing the giant center -->
+            <svg class="soccer-pattern" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- A single pentagon shape bridging the outer edge (points inward) -->
+                <polygon id="edge-pentagon" points="100,10 125,-5 115,-30 85,-30 75,-5" fill="#111827" stroke="#1f2937" stroke-width="4" stroke-linejoin="round"></polygon>
+                <!-- Line connecting to center (hidden behind circle) and forming the hexagon grid -->
+                <line id="hex-line" x1="100" y1="10" x2="100" y2="100" stroke="#1f2937" stroke-width="5"></line>
+              </defs>
+
+              <!-- 5-way symmetry for the classic soccer look -->
+              <use href="#edge-pentagon" transform="rotate(0 100 100)"></use>
+              <use href="#hex-line" transform="rotate(0 100 100)"></use>
+              
+              <use href="#edge-pentagon" transform="rotate(72 100 100)"></use>
+              <use href="#hex-line" transform="rotate(72 100 100)"></use>
+              
+              <use href="#edge-pentagon" transform="rotate(144 100 100)"></use>
+              <use href="#hex-line" transform="rotate(144 100 100)"></use>
+              
+              <use href="#edge-pentagon" transform="rotate(216 100 100)"></use>
+              <use href="#hex-line" transform="rotate(216 100 100)"></use>
+              
+              <use href="#edge-pentagon" transform="rotate(288 100 100)"></use>
+              <use href="#hex-line" transform="rotate(288 100 100)"></use>
+              
+              <!-- Outer connecting ring tying the pentagons together -->
+              <circle cx="100" cy="100" r="92" fill="none" stroke="#1f2937" stroke-width="5"></circle>
+            </svg>
+
+            <!-- Huge White Circle Center for Displaying Words Clearly (Radius 82% with whitespace-nowrap) -->
+            <div class="ball-word-circle">
+              <!-- Responsive huge font, strictly single line (whitespace-nowrap) -->
+              <span id="ball-word-text" class="dyslexia-word text-slate-950 text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] leading-none select-none whitespace-nowrap">好事</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ball Shadow on Grass -->
+        <div id="ball-shadow" class="ball-shadow" style="transform: scale(1); opacity: 1;"></div>
+      </div>
+
+      <!-- Center Timeout / Void Banner (Shown briefly if timer hits 0) -->
+      <div id="timeout-banner" class="hidden absolute z-40 pixel-panel-dark bg-rose-950 border-4 border-rose-400 px-8 py-6 text-center shadow-2xl">
+        <div class="text-6xl mb-1">💥</div>
+      </div>
+
+    </main>
+
+    <!-- ==================== BOTTOM CONTROL PANELS (LEFT TEAM / RIGHT TEAM WITH HUGE SCORES) ==================== -->
+    <footer class="relative z-30 w-full px-3 pb-3 flex items-end justify-between gap-2 pointer-events-auto">
+      
+      <!-- LEFT TEAM CONTROL PANEL -->
+      <div id="panel-team-left" class="relative w-[40%] max-w-md pixel-panel-dark bg-red-950/95 border-4 border-red-500 p-2.5 md:p-4 flex flex-col gap-2.5">
+        <div class="flex items-center justify-between border-b-2 border-white/20 pb-2">
+          <div class="flex items-center gap-2">
+            <span id="dot-team-left" class="w-4 h-4 md:w-5 md:h-5 bg-red-500 border-2 border-white inline-block shrink-0"></span>
+            <h3 id="name-team-left" class="text-lg md:text-3xl font-black text-white tracking-wider truncate max-w-[80px] md:max-w-[120px]">A</h3>
+          </div>
+          <!-- Enlarged Score Display -->
+          <div class="relative flex items-center gap-3 bg-slate-950 border-4 border-amber-400 px-2 md:px-4 py-1">
+            <span id="score-red" class="font-pixel-num text-4xl md:text-7xl text-amber-400 leading-none">0</span>
+            <span id="score-pop-red" class="hidden absolute -top-10 right-0 font-pixel-num text-2xl md:text-4xl text-emerald-400 drop-shadow-[0_2px_0_#000]">+1</span>
+          </div>
+        </div>
+
+        <!-- Foolproof Action Buttons: Only Stage 1 ✅ OR Stage 2 ⚽ is visible at a time -->
+        <div>
+          <!-- Stage 1 Button: Green Tick -->
+          <button id="btn-red-tick" onclick="handleStage1Success('red')" class="w-full pixel-btn bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 md:py-4 px-2 md:px-4 flex items-center justify-center gap-2 md:gap-3 text-xl md:text-3xl font-black tracking-wider">
+            <span class="text-2xl md:text-4xl">✅</span>
+          </button>
+
+          <!-- Stage 2 Button: Soccer Shoot -->
+          <button id="btn-red-shoot" onclick="handleStage2Shoot('red')" class="w-full pixel-btn bg-amber-500 hover:bg-amber-400 text-slate-950 py-2.5 md:py-4 px-2 md:px-4 flex items-center justify-center gap-2 md:gap-3 text-xl md:text-3xl font-black tracking-wider hidden" disabled="">
+            <span class="text-2xl md:text-4xl">⚽</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CENTER THERAPIST HELPER CONTROLS (Pause & Manual End - Horizontally Laid out to save space) -->
+      <div class="hidden md:flex flex-row flex-wrap items-center justify-center gap-2 pb-1 md:w-[25%] lg:w-[20%]">
+        <button id="btn-pause" onclick="togglePause()" class="pixel-btn bg-sky-700 hover:bg-sky-600 text-white px-3 py-1.5 text-xs font-bold whitespace-nowrap">⏸️ 暫停</button>
+        <button id="btn-manual-skip" onclick="skipCurrentWord()" class="pixel-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 text-xs font-bold whitespace-nowrap">
+          ⏭️ 跳過
+        </button>
+        <!-- The Manual Complete Game Button -->
+        <button onclick="enterGameOverState()" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold whitespace-nowrap">
+          🛑 完成遊戲
+        </button>
+      </div>
+
+      <!-- RIGHT TEAM CONTROL PANEL -->
+      <div id="panel-team-right" class="relative w-[40%] max-w-md pixel-panel-dark bg-blue-950/95 border-4 border-blue-500 p-2.5 md:p-4 flex flex-col gap-2.5">
+        <div class="flex items-center justify-between border-b-2 border-white/20 pb-2">
+          <div class="flex items-center gap-2">
+            <span id="dot-team-right" class="w-4 h-4 md:w-5 md:h-5 bg-blue-500 border-2 border-white inline-block shrink-0"></span>
+            <h3 id="name-team-right" class="text-lg md:text-3xl font-black text-white tracking-wider truncate max-w-[80px] md:max-w-[120px]">B</h3>
+          </div>
+          <!-- Enlarged Score Display -->
+          <div class="relative flex items-center gap-3 bg-slate-950 border-4 border-amber-400 px-2 md:px-4 py-1">
+            <span id="score-blue" class="font-pixel-num text-4xl md:text-7xl text-amber-400 leading-none">3</span>
+            <span id="score-pop-blue" class="absolute -top-10 right-0 font-pixel-num text-2xl md:text-4xl text-emerald-400 drop-shadow-[0_2px_0_#000] score-pop">+2</span>
+          </div>
+        </div>
+
+        <!-- Foolproof Action Buttons: Only Stage 1 ✅ OR Stage 2 ⚽ is visible at a time -->
+        <div>
+          <!-- Stage 1 Button: Green Tick -->
+          <button id="btn-blue-tick" onclick="handleStage1Success('blue')" class="w-full pixel-btn bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 md:py-4 px-2 md:px-4 flex items-center justify-center gap-2 md:gap-3 text-xl md:text-3xl font-black tracking-wider">
+            <span class="text-2xl md:text-4xl">✅</span>
+          </button>
+
+          <!-- Stage 2 Button: Soccer Shoot -->
+          <button id="btn-blue-shoot" onclick="handleStage2Shoot('blue')" class="w-full pixel-btn bg-amber-500 hover:bg-amber-400 text-slate-950 py-2.5 md:py-4 px-2 md:px-4 flex items-center justify-center gap-2 md:gap-3 text-xl md:text-3xl font-black tracking-wider hidden" disabled="">
+            <span class="text-2xl md:text-4xl">⚽</span>
+          </button>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- ==================== MODAL STATE 0: TARGET CHARACTER INTRO (簡潔版目標單字介紹) ==================== -->
+    <div id="modal-state0-intro" class="fixed inset-0 z-[60] bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+      <div class="w-[70vw] h-[70vh] max-w-none flex flex-col pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6 md:p-8 text-center animate-[fadeIn_0.25s_ease-out]">
+        <!-- 只保留"目標單字介紹"標題 -->
+        <div class="inline-block bg-amber-400 text-slate-950 font-black px-5 py-1.5 text-lg mb-4 self-center shrink-0">
+          目標單字介紹
+        </div>
+
+        <div class="flex-1 flex flex-col sm:flex-row items-center justify-center gap-6 my-4 bg-slate-950 border-4 border-slate-700 p-6 overflow-hidden">
+          <!-- Big Target Character Box -->
+          <div class="w-48 h-48 md:w-64 md:h-64 bg-amber-50 border-4 border-slate-900 flex items-center justify-center shadow-inner shrink-0">
+            <span id="intro-char-text" class="dyslexia-word text-[6rem] md:text-[8rem] text-slate-950 leading-none">事</span>
+          </div>
+
+          <!-- Target Character Image ONLY (No text explanation) -->
+          <div class="flex-1 w-full h-full flex items-center justify-center overflow-hidden">
+            <img id="intro-char-img" src="https://i.imgur.com/v7kDbZ5.jpeg" alt="" onerror="this.src=createFallbackSVG('')" class="w-full h-full object-contain border-4 border-slate-600 bg-slate-900">
+          </div>
+        </div>
+
+        <!-- 繼續按鈕，無第一階段字樣 -->
+        <button onclick="proceedFromCharIntro()" class="mt-4 w-full pixel-btn bg-emerald-500 hover:bg-emerald-400 text-slate-950 py-4 text-2xl font-black tracking-widest shrink-0">
+          繼續
+        </button>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL STATE 3: CELEBRATION & WORD RECAP (簡潔版總結彈窗，無構詞公式) ==================== -->
+    <div id="modal-state3-recap" class="fixed inset-0 z-[60] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+      <div class="w-[70vw] h-[70vh] max-w-none flex flex-col pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6 md:p-8 text-center">
+        
+        <!-- Summary Image & Big Target Word ONLY -->
+        <div class="flex-1 flex flex-col sm:flex-row items-center justify-center gap-6 my-2 bg-slate-950 border-4 border-slate-700 p-6 overflow-hidden">
+          
+          <!-- High Contrast Big Word Text (Left) -->
+          <div class="h-48 md:h-64 px-8 min-w-[200px] md:min-w-[250px] bg-white text-slate-950 border-4 border-slate-950 flex items-center justify-center shadow-md shrink-0">
+            <span id="recap-word-text" class="dyslexia-word text-6xl md:text-[6rem] leading-none whitespace-nowrap">心事</span>
+          </div>
+
+          <!-- Summary Image (Right) -->
+          <div class="flex-1 w-full h-full flex items-center justify-center overflow-hidden">
+            <img id="recap-summary-img" src="https://i.imgur.com/2J9zuCH.jpeg" alt="" onerror="this.src=createFallbackSVG('')" class="w-full h-full object-contain border-4 border-amber-400 bg-slate-900">
+          </div>
+          
+        </div>
+
+        <button onclick="nextWordAfterRecap()" class="mt-4 w-full pixel-btn bg-emerald-500 hover:bg-emerald-400 text-slate-950 py-4 text-2xl font-black tracking-widest shrink-0">
+          下一個 ➡️
+        </button>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL FINAL WINNER (比賽結束頒獎畫面) ==================== -->
+    <div id="modal-final-winner" class="hidden fixed inset-0 z-[60] bg-slate-950/90 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="max-w-xl w-full pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6 md:p-8 text-center">
+        <div class="text-6xl mb-3">🏆</div>
+        <h2 class="text-3xl md:text-4xl font-black text-amber-400 tracking-wider mb-2">訓練圓滿結束！</h2>
+        <p id="final-winner-title" class="text-2xl font-black text-emerald-300 mb-6">🎉 紅隊 獲勝！</p>
+
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div id="final-box-left" class="bg-slate-950 border-4 border-red-500 p-4">
+            <div id="final-label-left" class="text-white font-black text-xl mb-2">紅隊</div>
+            <div id="final-score-red" class="font-pixel-num text-5xl text-amber-400">0</div>
+          </div>
+          <div id="final-box-right" class="bg-slate-950 border-4 border-blue-500 p-4">
+            <div id="final-label-right" class="text-white font-black text-xl mb-2">藍隊</div>
+            <div id="final-score-blue" class="font-pixel-num text-5xl text-amber-400">0</div>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <button onclick="replaySameSettings()" class="flex-1 pixel-btn bg-amber-500 hover:bg-amber-400 text-slate-950 py-3.5 text-xl font-black">
+            🔄 再玩一場
+          </button>
+          <button onclick="returnToMainMenu()" class="flex-1 pixel-btn bg-slate-700 hover:bg-slate-600 text-white py-3.5 text-xl font-black">
+            🏠 返回主頁設定
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==================== PASSWORD MODAL (後台密碼驗證 0303) ==================== -->
+  <div id="modal-password" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="max-w-sm w-full pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6 text-center">
+      <div class="text-4xl mb-2">🔐</div>
+      <h3 class="text-xl font-black text-amber-300 mb-1">進入治療師後台管理</h3>
+      <p class="text-xs text-slate-400 mb-4">請輸入管理員密碼以編輯題庫資料</p>
+
+      <input id="admin-pwd-input" type="password" inputmode="numeric" maxlength="8" placeholder="請輸入密碼" onkeydown="if(event.key==='Enter') verifyAdminPassword()" class="w-full bg-slate-950 border-4 border-slate-700 focus:border-amber-400 outline-none text-center font-pixel-num text-2xl py-3 text-white tracking-widest mb-2">
+      
+      <p id="admin-pwd-error" class="hidden text-rose-400 text-xs font-bold mb-3">❌ 密碼錯誤，請重新輸入！</p>
+
+      <div class="flex gap-3 mt-4">
+        <button onclick="closePasswordModal()" class="flex-1 pixel-btn bg-slate-700 text-white py-2.5 font-bold">取消</button>
+        <button onclick="verifyAdminPassword()" class="flex-1 pixel-btn bg-amber-500 text-slate-950 py-2.5 font-black">確認進入</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SCREEN 3: ADMIN PANEL (後台數據管理系統) ==================== -->
+  <section id="screen-admin" class="fixed inset-0 z-50 bg-slate-950 text-white flex flex-col overflow-hidden hidden">
+    
+    <!-- Top Admin Header -->
+    <header class="bg-slate-900 border-b-4 border-slate-800 px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🛠️</span>
+        <div>
+          <h2 class="text-xl font-black text-amber-400">言語治療題庫後台管理系統 (Admin Panel)</h2>
+          <p class="text-xs text-slate-400">所有修改會自動儲存至瀏覽器 localStorage，亦可直接下載包含最新題庫的完整 HTML 跨裝置使用</p>
+          <!-- Site Title Modifier -->
+          <div class="mt-2 flex items-center gap-2">
+            <label class="text-xs font-bold text-amber-200">自訂網站標題：</label>
+            <input type="text" id="admin-site-title" class="bg-slate-950 border border-slate-700 text-white px-2 py-1 text-xs w-64" value="像素足球爭霸戰｜構詞意識（AMA）言語治療訓練系統">
+            <button onclick="saveSiteTitle()" class="pixel-btn bg-amber-600 text-slate-950 px-2 py-1 text-xs font-black">儲存標題</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Import / Export / Full HTML Download / Reset / Back Toolbar -->
+      <div class="flex flex-wrap items-center gap-2">
+        <button onclick="downloadUpdatedFullHTML()" class="pixel-btn bg-amber-400 hover:bg-amber-300 text-slate-950 px-3.5 py-1.5 text-xs font-black flex items-center gap-1.5">
+          <span>💾</span>
+          <span>下載最新完整 HTML 檔案 (跨裝置攜帶)</span>
+        </button>
+
+        <button onclick="exportDataJSON()" class="pixel-btn bg-indigo-700 hover:bg-indigo-600 text-white px-3 py-1.5 text-xs font-bold">
+          📥 匯出 JSON
+        </button>
+        <label class="pixel-btn bg-indigo-900 hover:bg-indigo-800 text-white px-3 py-1.5 text-xs font-bold cursor-pointer">
+          📤 匯入 JSON
+          <input type="file" accept=".json" onchange="importDataJSON(event)" class="hidden">
+        </label>
+
+        <button onclick="exportDataExcel()" class="pixel-btn bg-emerald-700 hover:bg-emerald-600 text-white px-3 py-1.5 text-xs font-bold">
+          📊 匯出 Excel (.xlsx)
+        </button>
+        <label class="pixel-btn bg-emerald-900 hover:bg-emerald-800 text-white px-3 py-1.5 text-xs font-bold cursor-pointer">
+          📂 匯入 Excel (.xlsx)
+          <input type="file" accept=".xlsx,.xls" onchange="importDataExcel(event)" class="hidden">
+        </label>
+
+        <button onclick="resetToDefaultData()" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold">
+          🔄 還原預設題庫
+        </button>
+
+        <button onclick="closeAdminPanel()" class="pixel-btn bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-1.5 text-sm font-black ml-1">
+          ✅ 完成並返回主頁
+        </button>
+      </div>
+    </header>
+
+    <!-- Admin Body: 2-Column Hierarchical Editor -->
+    <div class="flex-1 grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
+      
+      <!-- Left Column: Level 1 Target Characters (階層 1：目標單字) -->
+      <div class="lg:col-span-4 border-r-4 border-slate-800 flex flex-col h-full overflow-hidden bg-slate-900/60">
+        <div class="p-4 border-b-2 border-slate-800 flex items-center justify-between">
+          <h3 class="font-black text-amber-300 text-base">階層 1：目標單字列表</h3>
+          <button onclick="openCharFormModal()" class="pixel-btn bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 text-xs font-bold">
+            ➕ 新增目標單字
+          </button>
+        </div>
+
+        <div id="admin-char-list" class="flex-1 overflow-y-auto p-4 space-y-3"><div class="p-3 border-2 transition cursor-pointer flex items-center justify-between bg-slate-800 border-amber-400">
+          <div class="flex items-center gap-3">
+            <img src="https://i.imgur.com/v7kDbZ5.jpeg" onerror="this.src=createFallbackSVG('圖')" class="w-12 h-12 object-cover border-2 border-slate-950 bg-slate-950 shrink-0">
+            <div>
+              <div class="font-black text-lg text-amber-300">目標單字：事</div>
+              <div class="text-xs text-slate-400">包含 3 個目標詞語</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5" onclick="event.stopPropagation()">
+            <button onclick="openCharFormModal('char_1793159506450')" class="bg-slate-700 hover:bg-slate-600 text-xs px-2.5 py-1.5 font-bold">編輯</button>
+            <button onclick="deleteCharItem('char_1793159506450')" class="bg-rose-800 hover:bg-rose-700 text-xs px-2.5 py-1.5 font-bold">刪除</button>
+          </div>
+        </div><div class="p-3 border-2 transition cursor-pointer flex items-center justify-between bg-slate-900 border-slate-800 hover:border-slate-600">
+          <div class="flex items-center gap-3">
+            <img src="https://i.imgur.com/aHC411z.jpeg" onerror="this.src=createFallbackSVG('圖')" class="w-12 h-12 object-cover border-2 border-slate-950 bg-slate-950 shrink-0">
+            <div>
+              <div class="font-black text-lg text-amber-300">目標單字：法</div>
+              <div class="text-xs text-slate-400">包含 3 個目標詞語</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5" onclick="event.stopPropagation()">
+            <button onclick="openCharFormModal('char_1793159574317')" class="bg-slate-700 hover:bg-slate-600 text-xs px-2.5 py-1.5 font-bold">編輯</button>
+            <button onclick="deleteCharItem('char_1793159574317')" class="bg-rose-800 hover:bg-rose-700 text-xs px-2.5 py-1.5 font-bold">刪除</button>
+          </div>
+        </div><div class="p-3 border-2 transition cursor-pointer flex items-center justify-between bg-slate-900 border-slate-800 hover:border-slate-600">
+          <div class="flex items-center gap-3">
+            <img src="https://i.imgur.com/Y0ie31u.jpeg" onerror="this.src=createFallbackSVG('圖')" class="w-12 h-12 object-cover border-2 border-slate-950 bg-slate-950 shrink-0">
+            <div>
+              <div class="font-black text-lg text-amber-300">目標單字：場</div>
+              <div class="text-xs text-slate-400">包含 3 個目標詞語</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5" onclick="event.stopPropagation()">
+            <button onclick="openCharFormModal('char_1793159653750')" class="bg-slate-700 hover:bg-slate-600 text-xs px-2.5 py-1.5 font-bold">編輯</button>
+            <button onclick="deleteCharItem('char_1793159653750')" class="bg-rose-800 hover:bg-rose-700 text-xs px-2.5 py-1.5 font-bold">刪除</button>
+          </div>
+        </div><div class="p-3 border-2 transition cursor-pointer flex items-center justify-between bg-slate-900 border-slate-800 hover:border-slate-600">
+          <div class="flex items-center gap-3">
+            <img src="https://i.imgur.com/fYzGlFD.jpeg" onerror="this.src=createFallbackSVG('圖')" class="w-12 h-12 object-cover border-2 border-slate-950 bg-slate-950 shrink-0">
+            <div>
+              <div class="font-black text-lg text-amber-300">目標單字：員</div>
+              <div class="text-xs text-slate-400">包含 3 個目標詞語</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5" onclick="event.stopPropagation()">
+            <button onclick="openCharFormModal('char_1793159711850')" class="bg-slate-700 hover:bg-slate-600 text-xs px-2.5 py-1.5 font-bold">編輯</button>
+            <button onclick="deleteCharItem('char_1793159711850')" class="bg-rose-800 hover:bg-rose-700 text-xs px-2.5 py-1.5 font-bold">刪除</button>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Right Column: Level 2 Target Words for Selected Character (階層 2：目標詞語與圖片 URL) -->
+      <div class="lg:col-span-8 flex flex-col h-full overflow-hidden bg-slate-950">
+        <div class="p-4 border-b-2 border-slate-800 flex items-center justify-between bg-slate-900/40">
+          <div>
+            <h3 class="font-black text-sky-300 text-base">
+              階層 2：目標詞語列表（目前單字：<span id="admin-current-char-title" class="text-amber-400 text-xl">事</span>）
+            </h3>
+            <p class="text-xs text-slate-400">每個目標詞語包含：解釋字1圖片 URL、解釋字2圖片 URL、目標詞語總結圖 URL</p>
+          </div>
+          <button onclick="openWordFormModal()" class="pixel-btn bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 text-sm font-black">
+            ➕ 新增目標詞語
+          </button>
+        </div>
+
+        <div id="admin-word-list" class="flex-1 overflow-y-auto p-4 space-y-4"><div class="bg-slate-900 border-2 border-slate-800 p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-white text-slate-950 border-4 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              好事
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPm45jakWlD31zSM1QCB588Ii-nAc3gQpv1Wc3nY7JQ&amp;s=10" onerror="this.src=createFallbackSVG('圖1')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-amber-300 mt-1 truncate max-w-[85px]">圖1: 好的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://i.imgur.com/v7kDbZ5.jpeg" onerror="this.src=createFallbackSVG('圖2')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-sky-300 mt-1 truncate max-w-[85px]">圖2: 事的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://resource02.ulifestyle.com.hk/ulcms/content/article/image/w600/2023/11/20231124151756_4e12f36cda5a7c807cac8a792f2e8f3e8f3f0928.jpg" onerror="this.src=createFallbackSVG('總結圖')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-emerald-300 mt-1">總結圖</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 self-end md:self-center">
+            <button onclick="openWordFormModal(0)" class="pixel-btn bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 text-xs font-bold">✏️ 編輯</button>
+            <button onclick="deleteWordItem(0)" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold">🗑️ 刪除</button>
+          </div>
+        </div><div class="bg-slate-900 border-2 border-slate-800 p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-white text-slate-950 border-4 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              善事
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z7Culut8EaS8j7sYXQmmPVY3-IsJBMa3laiwKRyO7A&amp;s=10" onerror="this.src=createFallbackSVG('圖1')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-amber-300 mt-1 truncate max-w-[85px]">圖1: 善的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://i.imgur.com/v7kDbZ5.jpeg" onerror="this.src=createFallbackSVG('圖2')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-sky-300 mt-1 truncate max-w-[85px]">圖2: 事的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://www.rehabsociety.org.hk/wp-content/uploads/2022/01/02-1.jpg" onerror="this.src=createFallbackSVG('總結圖')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-emerald-300 mt-1">總結圖</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 self-end md:self-center">
+            <button onclick="openWordFormModal(1)" class="pixel-btn bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 text-xs font-bold">✏️ 編輯</button>
+            <button onclick="deleteWordItem(1)" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold">🗑️ 刪除</button>
+          </div>
+        </div><div class="bg-slate-900 border-2 border-slate-800 p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-white text-slate-950 border-4 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              心事
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIBWfvA6yiqtsE1hIdnzQBFR4K3bT5FDXK-k7W6wq10n-cxQau_7r1tnr&amp;s=10" onerror="this.src=createFallbackSVG('圖1')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-amber-300 mt-1 truncate max-w-[85px]">圖1: 心的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://i.imgur.com/v7kDbZ5.jpeg" onerror="this.src=createFallbackSVG('圖2')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-sky-300 mt-1 truncate max-w-[85px]">圖2: 事的意思</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="https://i.imgur.com/2J9zuCH.jpeg" onerror="this.src=createFallbackSVG('總結圖')" class="w-20 h-14 object-cover">
+                <span class="text-[11px] text-emerald-300 mt-1">總結圖</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 self-end md:self-center">
+            <button onclick="openWordFormModal(2)" class="pixel-btn bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 text-xs font-bold">✏️ 編輯</button>
+            <button onclick="deleteWordItem(2)" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold">🗑️ 刪除</button>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MODAL: ADD/EDIT TARGET CHARACTER (階層 1 表單) ==================== -->
+  <div id="modal-char-form" class="hidden fixed inset-0 z-50 bg-slate-950/85 flex items-center justify-center p-4">
+    <div class="max-w-md w-full pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6">
+      <h3 id="char-form-title" class="text-xl font-black text-amber-300 mb-4">新增 / 編輯目標單字</h3>
+      <input type="hidden" id="char-form-id">
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">目標單字（例如：景、聲、電）*</label>
+          <input id="char-form-text" type="text" maxlength="2" placeholder="景" class="w-full bg-slate-950 border-2 border-slate-700 p-2.5 text-xl font-black text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">解釋目標字的圖片 URL *</label>
+          <input id="char-form-img" type="text" placeholder="https://..." class="w-full bg-slate-950 border-2 border-slate-700 p-2 text-sm text-white">
+          <p class="text-[11px] text-slate-400 mt-1">留空將自動生成高對比像素插畫圖卡</p>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">口頭介紹輔助說明（選填）</label>
+          <input id="char-form-desc" type="text" placeholder="例如：代表風景、日光或看到的畫面" class="w-full bg-slate-950 border-2 border-slate-700 p-2 text-sm text-white">
+        </div>
+      </div>
+
+      <div class="flex gap-3 mt-6">
+        <button onclick="closeCharFormModal()" class="flex-1 pixel-btn bg-slate-700 text-white py-2.5 font-bold">取消</button>
+        <button onclick="saveCharForm()" class="flex-1 pixel-btn bg-emerald-600 text-white py-2.5 font-black">儲存單字</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: ADD/EDIT TARGET WORD (階層 2 表單) ==================== -->
+  <div id="modal-word-form" class="hidden fixed inset-0 z-50 bg-slate-950/85 flex items-center justify-center p-4">
+    <div class="max-w-lg w-full pixel-panel-dark bg-slate-900 border-4 border-sky-400 p-6 max-h-[92vh] overflow-y-auto">
+      <h3 id="word-form-title" class="text-xl font-black text-sky-300 mb-4">新增 / 編輯目標詞語</h3>
+      <input type="hidden" id="word-form-index">
+
+      <div class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-amber-300 mb-1">目標詞語（例如：夜景）*</label>
+          <input id="word-form-text" type="text" placeholder="夜景" class="w-full bg-slate-950 border-2 border-slate-700 p-2.5 text-xl font-black text-white">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-slate-950/60 p-3 border border-slate-800">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">圖 1 說明文字（解釋字 1）</label>
+            <input id="word-form-label1" type="text" placeholder="例如：夜晚的天空" class="w-full bg-slate-900 border border-slate-700 p-2 text-xs text-white">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">圖 1 URL（解釋字 1 的圖片）*</label>
+            <input id="word-form-img1" type="text" placeholder="https://..." class="w-full bg-slate-900 border border-slate-700 p-2 text-xs text-white">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-slate-950/60 p-3 border border-slate-800">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">圖 2 說明文字（解釋字 2）</label>
+            <input id="word-form-label2" type="text" placeholder="例如：風景 / 景色" class="w-full bg-slate-900 border border-slate-700 p-2 text-xs text-white">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">圖 2 URL（解釋字 2 的圖片）*</label>
+            <input id="word-form-img2" type="text" placeholder="https://..." class="w-full bg-slate-900 border border-slate-700 p-2 text-xs text-white">
+          </div>
+        </div>
+
+        <div class="bg-slate-950/60 p-3 border border-slate-800">
+          <label class="block text-xs font-bold text-emerald-300 mb-1">目標詞語總結圖 URL（例如：維港夜景圖）*</label>
+          <input id="word-form-summary" type="text" placeholder="https://..." class="w-full bg-slate-900 border border-slate-700 p-2 text-xs text-white">
+          <p class="text-[11px] text-slate-400 mt-1">提示：若圖片網址留空，系統將自動根據說明文字產生清晰插畫圖卡</p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 mt-6">
+        <button onclick="closeWordFormModal()" class="flex-1 pixel-btn bg-slate-700 text-white py-2.5 font-bold">取消</button>
+        <button onclick="saveWordForm()" class="flex-1 pixel-btn bg-sky-600 text-white py-2.5 font-black">儲存詞語</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CUSTOM MESSAGE / CONFIRM TOAST MODAL (No native alert/confirm) ==================== -->
+  <div id="modal-dialog" class="fixed inset-0 z-[70] bg-slate-950/80 flex items-center justify-center p-4 hidden">
+    <div class="max-w-sm w-full pixel-panel-dark bg-slate-900 border-4 border-amber-400 p-6 text-center">
+      <div id="dialog-icon" class="text-4xl mb-2">⚠️</div>
+      <h4 id="dialog-title" class="text-lg font-black text-amber-300 mb-2">返回主頁</h4>
+      <p id="dialog-msg" class="text-sm text-slate-200 mb-5">確定要結束目前對戰並返回主頁設定嗎？</p>
+      <div id="dialog-buttons" class="flex gap-3 justify-center"><button class="pixel-btn bg-slate-700 text-white px-5 py-2 font-bold">取消</button><button class="pixel-btn bg-rose-600 text-white px-5 py-2 font-black">確定執行</button></div>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT APPLICATION LOGIC ==================== -->
+  <script>
+    /*************************************************************************
+     * 0. FULLSCREEN TOGGLE
+     *************************************************************************/
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.log(`Error attempting to enable fullscreen: ${err.message}`);
+        });
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    document.addEventListener('fullscreenchange', () => {
+      const fsIcon = document.getElementById('fs-icon');
+      const fsLabel = document.getElementById('fs-label');
+      if (document.fullscreenElement) {
+        fsIcon.innerHTML = '✖'; 
+        if(fsLabel) fsLabel.textContent = '退出全螢幕';
+      } else {
+        fsIcon.innerHTML = '⛶';
+        if(fsLabel) fsLabel.textContent = '全螢幕';
+      }
+    });
+
+    /*************************************************************************
+     * 1. HIGH-CONTRAST SVG ILLUSTRATION GENERATOR (Works 100% Offline & Online)
+     *************************************************************************/
+    function createConceptSVG(title, emoji, bgHex1 = '#1e3a8a', bgHex2 = '#0f172a') {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="${bgHex1}"/>
+            <stop offset="100%" stop-color="${bgHex2}"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="280" fill="url(#g)"/>
+        <rect x="10" y="10" width="380" height="260" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="8 8" opacity="0.35"/>
+        <text x="200" y="145" font-size="115" text-anchor="middle" dominant-baseline="middle">${emoji}</text>
+      </svg>`;
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+
+    function createFallbackSVG(label) {
+      return createConceptSVG(label || '', '🖼️', '#334155', '#0f172a');
+    }
+
+    /*************************************************************************
+     * 2. DEFAULT HIERARCHICAL DATASET & PORTABLE EMBEDDED DATA
+     *************************************************************************/
+    const STORAGE_KEY = 'AMA_PIXEL_SOCCER_DATA_1793161448192';
+    const TEAM_CONFIG_KEY = 'AMA_PIXEL_SOCCER_TEAMS_V2';
+
+    /* __PORTABLE_DATA_START__ */
+    const PORTABLE_INITIAL_DATA = [
+  {
+    "id": "char_1793159506450",
+    "targetChar": "事",
+    "charImageUrl": "https://i.imgur.com/v7kDbZ5.jpeg",
+    "description": "認識目標單字「事」",
+    "words": [
+      {
+        "word": "好事",
+        "label1": "好的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPm45jakWlD31zSM1QCB588Ii-nAc3gQpv1Wc3nY7JQ&s=10",
+        "label2": "事的意思",
+        "img2Url": "https://i.imgur.com/v7kDbZ5.jpeg",
+        "summaryUrl": "https://resource02.ulifestyle.com.hk/ulcms/content/article/image/w600/2023/11/20231124151756_4e12f36cda5a7c807cac8a792f2e8f3e8f3f0928.jpg"
+      },
+      {
+        "word": "善事",
+        "label1": "善的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z7Culut8EaS8j7sYXQmmPVY3-IsJBMa3laiwKRyO7A&s=10",
+        "label2": "事的意思",
+        "img2Url": "https://i.imgur.com/v7kDbZ5.jpeg",
+        "summaryUrl": "https://www.rehabsociety.org.hk/wp-content/uploads/2022/01/02-1.jpg"
+      },
+      {
+        "word": "心事",
+        "label1": "心的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIBWfvA6yiqtsE1hIdnzQBFR4K3bT5FDXK-k7W6wq10n-cxQau_7r1tnr&s=10",
+        "label2": "事的意思",
+        "img2Url": "https://i.imgur.com/v7kDbZ5.jpeg",
+        "summaryUrl": "https://i.imgur.com/2J9zuCH.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "char_1793159574317",
+    "targetChar": "法",
+    "charImageUrl": "https://i.imgur.com/aHC411z.jpeg",
+    "description": "認識目標單字「法」",
+    "words": [
+      {
+        "word": "違法",
+        "label1": "違的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKVJC5K6INT5ISdFeM3R0FzOSxo-dRDHnzh-OvO9fqw&s=10",
+        "label2": "法的意思",
+        "img2Url": "https://cchc-herald.org/images/easyblog_articles/10943/b2ap3_large_4A1.jpg",
+        "summaryUrl": "https://i.imgur.com/qrT4hH4.jpeg"
+      },
+      {
+        "word": "用法",
+        "label1": "用的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqoQvOF_m2u_Kr_6Eb17EtMD04VMobV-lMZzDW1roxTd2aa2MGQ3wj3Q&s=10",
+        "label2": "法的意思",
+        "img2Url": "https://i.imgur.com/C10hQCh.jpeg",
+        "summaryUrl": "https://www-ws.gov.taipei/001/Upload/691/relpic/51518/8118498/f5759da6-9f2b-4dc0-aa8d-48e61dea6138.png"
+      },
+      {
+        "word": "書法",
+        "label1": "書的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQszml5wbKoNujlXKqdhJ4_3HnKCjBahWzphenXJBkmWaT9uDxpKq54tf&s=10",
+        "label2": "法的意思",
+        "img2Url": "https://i.imgur.com/C10hQCh.jpeg",
+        "summaryUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqn4hTJ9yFm2N-Bx4y551uGYeOo5LCEUBvzKl9-5BMexIs07qaldhcI8&s=10"
+      }
+    ]
+  },
+  {
+    "id": "char_1793159653750",
+    "targetChar": "場",
+    "charImageUrl": "https://i.imgur.com/Y0ie31u.jpeg",
+    "description": "認識目標單字「場」",
+    "words": [
+      {
+        "word": "球場",
+        "label1": "球的意思",
+        "img1Url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Many_balls.jpg/250px-Many_balls.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+        "label2": "場的意思",
+        "img2Url": "https://i.imgur.com/Y0ie31u.jpeg",
+        "summaryUrl": "https://www.goparksaisha.hk/wp-content/uploads/2024/10/DSC3257.jpg"
+      },
+      {
+        "word": "機場",
+        "label1": "機的意思",
+        "img1Url": "https://images.chinatimes.com/newsphoto/2019-03-24/656/20190324002225.jpg",
+        "label2": "場的意思",
+        "img2Url": "https://i.imgur.com/Y0ie31u.jpeg",
+        "summaryUrl": "https://img.soundofhope.org/2022-01/gettyimages-1149089169-1641762769932.jpg"
+      },
+      {
+        "word": "農場",
+        "label1": "農的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQo4oYhs04Ed1qrF0rrCuJ_TQHx7uBBXdNEyn4D-zjQu0W1921qmlJZ83O&s=10",
+        "label2": "場的意思",
+        "img2Url": "https://i.imgur.com/Y0ie31u.jpeg",
+        "summaryUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2T4CJkChPRal36s1jKV8veX_1OHksvdvhPnkKl3ZhSdb-bnVcaQsW6PEi&s=10"
+      }
+    ]
+  },
+  {
+    "id": "char_1793159711850",
+    "targetChar": "員",
+    "charImageUrl": "https://i.imgur.com/fYzGlFD.jpeg",
+    "description": "認識目標單字「員」",
+    "words": [
+      {
+        "word": "店員",
+        "label1": "店的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqmqx14ZKaYx4vWymm6J0s9CzP6JetajxzY5O7RkBSozYcqUBKNsi5yo&s=10",
+        "label2": "員的意思",
+        "img2Url": "https://i.imgur.com/fYzGlFD.jpeg",
+        "summaryUrl": "https://storage.googleapis.com/static-seinsights-tw-prod/images/a3e5ca09-86e6-4ba0-a890-84392c67e641-w1200.jpg"
+      },
+      {
+        "word": "警員",
+        "label1": "警的意思",
+        "img1Url": "https://dw-media.dotdotnews.com/dams/share/image/202310/04/6306d65ae4b01ef739c9e822.jpeg?x-oss-process=image/resize,w_1200",
+        "label2": "員的意思",
+        "img2Url": "https://i.imgur.com/fYzGlFD.jpeg",
+        "summaryUrl": "https://www.police.gov.hk/info/img/rec/role_pc.png"
+      },
+      {
+        "word": "演員",
+        "label1": "演的意思",
+        "img1Url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHcUx5NKHxsfSbrnBnzSY2RwJEAWt45FGU5fFVhBFZIMnyv-Iz9rHFGF6&s=10",
+        "label2": "員的意思",
+        "img2Url": "https://i.imgur.com/fYzGlFD.jpeg",
+        "summaryUrl": "https://i.imgur.com/fk5WQOP.jpeg"
+      }
+    ]
+  }
+];
+    const PORTABLE_INITIAL_TEAMS = {
+  "left": {
+    "name": "A",
+    "color": "red"
+  },
+  "right": {
+    "name": "B",
+    "color": "blue"
+  }
+};
+    /* __PORTABLE_DATA_END__ */
+
+    function getDefaultDataset() {
+      if (PORTABLE_INITIAL_DATA && Array.isArray(PORTABLE_INITIAL_DATA) && PORTABLE_INITIAL_DATA.length > 0) {
+        return JSON.parse(JSON.stringify(PORTABLE_INITIAL_DATA));
+      }
+      return [
+        {
+          id: 'char_jing',
+          targetChar: '景',
+          charImageUrl: createConceptSVG('景', '🏞️', '#065f46', '#064e3b'),
+          description: '',
+          words: [
+            {
+              word: '夜景',
+              label1: '夜晚的天空',
+              img1Url: createConceptSVG('夜晚的天空', '🌃🌙', '#1e1b4b', '#09090b'),
+              label2: '風景／景色',
+              img2Url: createConceptSVG('風景／景色', '🏞️', '#065f46', '#022c22'),
+              summaryUrl: createConceptSVG('維港璀璨夜景', '🌉✨🌃', '#311042', '#0f172a')
+            },
+            {
+              word: '海景',
+              label1: '大海／海洋',
+              img1Url: createConceptSVG('蔚藍大海', '🌊🐚', '#0284c7', '#0c4a6e'),
+              label2: '風景／景色',
+              img2Url: createConceptSVG('風景／景色', '🏞️', '#065f46', '#022c22'),
+              summaryUrl: createConceptSVG('無敵大海景', '🏖️🌊☀️', '#0369a1', '#082f49')
+            },
+            {
+              word: '山景',
+              label1: '高山／山脈',
+              img1Url: createConceptSVG('高聳山脈', '⛰️🌲', '#3f6212', '#1a2e05'),
+              label2: '風景／景色',
+              img2Url: createConceptSVG('風景／景色', '🏞️', '#065f46', '#022c22'),
+              summaryUrl: createConceptSVG('壯麗翠綠山景', '🏔️🦅🌲', '#15803d', '#052e16')
+            },
+            {
+              word: '雪景',
+              label1: '寒冷白雪',
+              img1Url: createConceptSVG('冬天飄雪', '❄️☃️', '#38bdf8', '#0369a1'),
+              label2: '風景／景色',
+              img2Url: createConceptSVG('風景／景色', '🏞️', '#065f46', '#022c22'),
+              summaryUrl: createConceptSVG('銀白冬日雪景', '🏔️❄️⛄', '#0284c7', '#1e293b')
+            },
+            {
+              word: '街景',
+              label1: '街道與馬路',
+              img1Url: createConceptSVG('熱鬧街道', '🛣️🚦', '#475569', '#1e293b'),
+              label2: '風景／景色',
+              img2Url: createConceptSVG('風景／景色', '🏞️', '#065f46', '#022c22'),
+              summaryUrl: createConceptSVG('城市繁華街景', '🏙️🚌🏪', '#b45309', '#451a03')
+            }
+          ]
+        },
+        {
+          id: 'char_sheng',
+          targetChar: '聲',
+          charImageUrl: createConceptSVG('聲', '🔊👂', '#7c2d12', '#431407'),
+          description: '',
+          words: [
+            {
+              word: '雨聲',
+              label1: '天上下雨',
+              img1Url: createConceptSVG('天空下雨', '🌧️☔', '#1d4ed8', '#1e3a8a'),
+              label2: '聲音',
+              img2Url: createConceptSVG('耳朵聽聲音', '🔊👂', '#9a3412', '#431407'),
+              summaryUrl: createConceptSVG('淅瀝瀝的雨聲', '🌧️💧🎶', '#1e40af', '#0f172a')
+            },
+            {
+              word: '笑聲',
+              label1: '開心大笑',
+              img1Url: createConceptSVG('開心歡笑', '😄😆', '#ca8a04', '#713f12'),
+              label2: '聲音',
+              img2Url: createConceptSVG('耳朵聽聲音', '🔊👂', '#9a3412', '#431407'),
+              summaryUrl: createConceptSVG('哈哈開懷笑聲', '😂🎉🔊', '#d97706', '#451a03')
+            },
+            {
+              word: '掌聲',
+              label1: '雙手拍掌',
+              img1Url: createConceptSVG('雙手拍拍手', '👏🙌', '#b91c1c', '#7f1d1d'),
+              label2: '聲音',
+              img2Url: createConceptSVG('耳朵聽聲音', '🔊👂', '#9a3412', '#431407'),
+              summaryUrl: createConceptSVG('熱烈鼓掌掌聲', '👏👏🌟', '#dc2626', '#450a0a')
+            },
+            {
+              word: '雷聲',
+              label1: '閃電打雷',
+              img1Url: createConceptSVG('狂風閃電', '⚡🌩️', '#6d28d9', '#2e1065'),
+              label2: '聲音',
+              img2Url: createConceptSVG('耳朵聽聲音', '🔊👂', '#9a3412', '#431407'),
+              summaryUrl: createConceptSVG('轟隆隆的雷聲', '⛈️⚡💥', '#4c1d95', '#09090b')
+            },
+            {
+              word: '歌聲',
+              label1: '拿咪唱歌',
+              img1Url: createConceptSVG('開心唱歌', '🎤🎵', '#be185d', '#500724'),
+              label2: '聲音',
+              img2Url: createConceptSVG('耳朵聽聲音', '🔊👂', '#9a3412', '#431407'),
+              summaryUrl: createConceptSVG('動聽悠揚歌聲', '🎤🎶🌟', '#db2777', '#4c0519')
+            }
+          ]
+        },
+        {
+          id: 'char_dian',
+          targetChar: '電',
+          charImageUrl: createConceptSVG('電', '⚡🔌', '#b45309', '#451a03'),
+          description: '',
+          words: [
+            {
+              word: '電腦',
+              label1: '電力驅動',
+              img1Url: createConceptSVG('電力能源', '⚡🔌', '#d97706', '#78350f'),
+              label2: '聰明頭腦／運算',
+              img2Url: createConceptSVG('思考的大腦', '🧠💡', '#be185d', '#500724'),
+              summaryUrl: createConceptSVG('桌上型與手提電腦', '💻🖥️⌨️', '#0369a1', '#0f172a')
+            },
+            {
+              word: '電梯',
+              label1: '電力驅動',
+              img1Url: createConceptSVG('電力能源', '⚡🔌', '#d97706', '#78350f'),
+              label2: '上下樓梯',
+              img2Url: createConceptSVG('階梯／樓梯', '🪜🏢', '#475569', '#1e293b'),
+              summaryUrl: createConceptSVG('商場升降電梯', '🛗⬆️⬇️', '#0f766e', '#042f2e')
+            },
+            {
+              word: '電影',
+              label1: '電力放映機',
+              img1Url: createConceptSVG('電力能源', '⚡🔌', '#d97706', '#78350f'),
+              label2: '動態影像',
+              img2Url: createConceptSVG('光影畫面', '🎞️📽️', '#4338ca', '#1e1b4b'),
+              summaryUrl: createConceptSVG('戲院大銀幕電影', '🎬🍿📽️', '#991b1b', '#111827')
+            }
+          ]
+        }
+      ];
+    }
+
+    /*************************************************************************
+     * 3. AUDIO SYSTEM
+     *************************************************************************/
+    let audioCtx = null;
+    let soundEnabled = true;
+
+    function getAudioCtx() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    function playTone(freq, type = 'square', duration = 0.12, delay = 0, gainVal = 0.12) {
+      if (!soundEnabled) return;
+      try {
+        const ctx = getAudioCtx();
+        if (!ctx) return;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime + delay);
+        gain.gain.setValueAtTime(gainVal, ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(ctx.currentTime + delay);
+        osc.stop(ctx.currentTime + delay + duration);
+      } catch (e) {}
+    }
+
+    function sfxTick(urgent = false) {
+      playTone(urgent ? 880 : 520, 'square', 0.06, 0, 0.08);
+    }
+
+    function sfxStage1Correct() {
+      playTone(523.25, 'square', 0.1, 0, 0.15);
+      playTone(659.25, 'square', 0.1, 0.09, 0.15);
+      playTone(783.99, 'square', 0.18, 0.18, 0.18);
+      // Bounce thud
+      playTone(130, 'triangle', 0.2, 0.32, 0.25);
+    }
+
+    function sfxExplode() {
+      playTone(180, 'sawtooth', 0.18, 0, 0.2);
+      playTone(120, 'sawtooth', 0.22, 0.12, 0.22);
+      playTone(75, 'sawtooth', 0.35, 0.25, 0.25);
+    }
+
+    function sfxShootAndGoal() {
+      // Kick whoosh
+      playTone(220, 'triangle', 0.15, 0, 0.25);
+      playTone(440, 'sine', 0.25, 0.1, 0.15);
+      // Goal fanfare at impact (0.75s)
+      const notes = [523.25, 659.25, 783.99, 1046.5];
+      notes.forEach((n, idx) => {
+        playTone(n, 'square', 0.22, 0.72 + idx * 0.11, 0.18);
+      });
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      document.getElementById('sound-icon').textContent = soundEnabled ? '🔊' : '🔇';
+      document.getElementById('sound-label').textContent = soundEnabled ? '音效開啟' : '靜音模式';
+      if (soundEnabled) playTone(660, 'square', 0.08);
+    }
+
+    /*************************************************************************
+     * 4. APPLICATION STATE, TEAM CUSTOMIZATION & STORAGE MANAGEMENT
+     *************************************************************************/
+    let appData = [];
+    let selectedCharIds = new Set();
+    let setupWordCount = 5;
+    let setupTimerSeconds = 8;
+
+    const COLOR_PALETTES = {
+      red: {
+        hex: '#ef4444',
+        shadow: '#991b1b',
+        panelBg: 'bg-red-950/95',
+        panelBorder: 'border-red-500',
+        dotBg: 'bg-red-500',
+        badgeBg: 'bg-red-700',
+        winnerText: 'text-red-400'
+      },
+      blue: {
+        hex: '#3b82f6',
+        shadow: '#1e40af',
+        panelBg: 'bg-blue-950/95',
+        panelBorder: 'border-blue-500',
+        dotBg: 'bg-blue-500',
+        badgeBg: 'bg-blue-700',
+        winnerText: 'text-sky-400'
+      },
+      yellow: {
+        hex: '#eab308',
+        shadow: '#a16207',
+        panelBg: 'bg-amber-950/95',
+        panelBorder: 'border-amber-400',
+        dotBg: 'bg-amber-400',
+        badgeBg: 'bg-amber-600',
+        winnerText: 'text-amber-300'
+      },
+      green: {
+        hex: '#10b981',
+        shadow: '#065f46',
+        panelBg: 'bg-emerald-950/95',
+        panelBorder: 'border-emerald-500',
+        dotBg: 'bg-emerald-500',
+        badgeBg: 'bg-emerald-700',
+        winnerText: 'text-emerald-400'
+      }
+    };
+
+    let teamConfig = {
+      left: { name: '紅隊', color: 'red' },
+      right: { name: '藍隊', color: 'blue' }
+    };
+
+    // Active Game State Machine
+    let gameState = 'MENU';
+    let matchQueue = [];
+    let currentQueueIndex = 0;
+    let introducedCharIds = new Set();
+    let redScore = 0;
+    let blueScore = 0;
+
+    // Pause functionality
+    let isPaused = false;
+    let pauseTimeLeft = 0;
+
+    // Circular Countdown Timer via requestAnimationFrame
+    let timerInterval = null;
+    let ringAnimFrame = null;
+    let stage1StartTime = 0;
+    let lastTickSec = -1;
+    const RING_CIRCUMFERENCE = 2 * Math.PI * 112; // 703.72
+
+    // Admin Selected Character
+    let adminSelectedCharId = null;
+
+    function loadDataFromStorage() {
+      try {
+        const rawTitle = localStorage.getItem('AMA_SITE_TITLE');
+        if (rawTitle) {
+          document.title = rawTitle;
+          const adminTitleInput = document.getElementById('admin-site-title');
+          if(adminTitleInput) adminTitleInput.value = rawTitle;
+          const mainTitle = document.getElementById('main-site-title');
+          if(mainTitle) mainTitle.textContent = rawTitle;
+        }
+
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            appData = parsed;
+          }
+        }
+      } catch (e) {
+        console.error('Failed to read localStorage:', e);
+      }
+
+      if (!appData || appData.length === 0) {
+        appData = getDefaultDataset();
+        saveDataToStorage();
+      }
+
+      try {
+        const rawTeams = localStorage.getItem(TEAM_CONFIG_KEY);
+        if (rawTeams) {
+          const parsedTeams = JSON.parse(rawTeams);
+          if (parsedTeams && parsedTeams.left && parsedTeams.right) {
+            teamConfig = parsedTeams;
+          }
+        } else if (PORTABLE_INITIAL_TEAMS) {
+          teamConfig = JSON.parse(JSON.stringify(PORTABLE_INITIAL_TEAMS));
+        }
+      } catch (e) {}
+
+      syncTeamConfigUI();
+    }
+
+    function saveDataToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+      } catch (e) {
+        console.error('Failed to save localStorage:', e);
+      }
+    }
+
+    function saveTeamConfigToStorage() {
+      try {
+        localStorage.setItem(TEAM_CONFIG_KEY, JSON.stringify(teamConfig));
+      } catch (e) {}
+    }
+
+    function updateTeamConfig(side, key, val) {
+      if (key === 'name') {
+        teamConfig[side].name = val.trim() || (side === 'left' ? '左隊' : '右隊');
+      } else if (key === 'color') {
+        playTone(620, 'square', 0.05);
+        teamConfig[side].color = val;
+      }
+      saveTeamConfigToStorage();
+      syncTeamConfigUI();
+    }
+
+    function syncTeamConfigUI() {
+      // Sync Main Menu Inputs & Color Picker Buttons
+      const leftInput = document.getElementById('input-team-left-name');
+      const rightInput = document.getElementById('input-team-right-name');
+      if (leftInput && document.activeElement !== leftInput) leftInput.value = teamConfig.left.name;
+      if (rightInput && document.activeElement !== rightInput) rightInput.value = teamConfig.right.name;
+
+      ['left', 'right'].forEach(side => {
+        const container = document.getElementById(`color-picker-${side}`);
+        if (!container) return;
+        container.querySelectorAll('button').forEach(btn => {
+          const c = btn.getAttribute('data-color');
+          // Clear both opacity classes and selection styles to safely reset
+          btn.classList.remove('opacity-50', 'opacity-40', 'opacity-100', 'ring-2', 'ring-white', 'scale-105');
+          if (c === teamConfig[side].color) {
+            btn.classList.add('opacity-100', 'ring-2', 'ring-white', 'scale-105');
+          } else {
+            btn.classList.add('opacity-50');
+          }
+        });
+      });
+
+      // Apply Colors & Names to Stadium Goals & Control Panels
+      const leftPal = COLOR_PALETTES[teamConfig.left.color] || COLOR_PALETTES.red;
+      const rightPal = COLOR_PALETTES[teamConfig.right.color] || COLOR_PALETTES.blue;
+
+      document.documentElement.style.setProperty('--left-goal-color', leftPal.hex);
+      document.documentElement.style.setProperty('--left-goal-shadow', leftPal.shadow);
+      document.documentElement.style.setProperty('--right-goal-color', rightPal.hex);
+      document.documentElement.style.setProperty('--right-goal-shadow', rightPal.shadow);
+
+      const goalLeftLabel = document.getElementById('goal-left-label');
+      const goalRightLabel = document.getElementById('goal-right-label');
+      if (goalLeftLabel) {
+        goalLeftLabel.textContent = `${teamConfig.left.name}`;
+        goalLeftLabel.className = `${leftPal.badgeBg} text-white text-lg md:text-2xl font-black px-4 py-2 border-4 border-white shadow-lg whitespace-nowrap`;
+      }
+      if (goalRightLabel) {
+        goalRightLabel.textContent = `${teamConfig.right.name}`;
+        goalRightLabel.className = `${rightPal.badgeBg} text-white text-lg md:text-2xl font-black px-4 py-2 border-4 border-white shadow-lg whitespace-nowrap`;
+      }
+
+      const panelLeft = document.getElementById('panel-team-left');
+      const panelRight = document.getElementById('panel-team-right');
+      if (panelLeft) {
+        panelLeft.className = `relative w-[40%] max-w-md pixel-panel-dark ${leftPal.panelBg} border-4 ${leftPal.panelBorder} p-2.5 md:p-4 flex flex-col gap-2.5`;
+      }
+      if (panelRight) {
+        panelRight.className = `relative w-[40%] max-w-md pixel-panel-dark ${rightPal.panelBg} border-4 ${rightPal.panelBorder} p-2.5 md:p-4 flex flex-col gap-2.5`;
+      }
+
+      const dotLeft = document.getElementById('dot-team-left');
+      const dotRight = document.getElementById('dot-team-right');
+      if (dotLeft) dotLeft.className = `w-4 h-4 md:w-5 md:h-5 ${leftPal.dotBg} border-2 border-white inline-block shrink-0`;
+      if (dotRight) dotRight.className = `w-4 h-4 md:w-5 md:h-5 ${rightPal.dotBg} border-2 border-white inline-block shrink-0`;
+
+      const nameLeft = document.getElementById('name-team-left');
+      const nameRight = document.getElementById('name-team-right');
+      if (nameLeft) nameLeft.textContent = teamConfig.left.name;
+      if (nameRight) nameRight.textContent = teamConfig.right.name;
+    }
+
+    /*************************************************************************
+     * 5. CUSTOM DIALOG HELPER (Replaces native alert & confirm)
+     *************************************************************************/
+    function showMessageModal(title, message, icon = '💡') {
+      document.getElementById('dialog-icon').textContent = icon;
+      document.getElementById('dialog-title').textContent = title;
+      document.getElementById('dialog-msg').textContent = message;
+      const btnContainer = document.getElementById('dialog-buttons');
+      btnContainer.innerHTML = `
+        <button onclick="closeDialogModal()" class="pixel-btn bg-amber-500 text-slate-950 px-6 py-2 font-black">確定</button>
+      `;
+      document.getElementById('modal-dialog').classList.remove('hidden');
+    }
+
+    function showConfirmModal(title, message, onConfirm, icon = '⚠️') {
+      document.getElementById('dialog-icon').textContent = icon;
+      document.getElementById('dialog-title').textContent = title;
+      document.getElementById('dialog-msg').textContent = message;
+      const btnContainer = document.getElementById('dialog-buttons');
+      btnContainer.innerHTML = '';
+
+      const cancelBtn = document.createElement('button');
+      cancelBtn.className = 'pixel-btn bg-slate-700 text-white px-5 py-2 font-bold';
+      cancelBtn.textContent = '取消';
+      cancelBtn.onclick = closeDialogModal;
+
+      const okBtn = document.createElement('button');
+      okBtn.className = 'pixel-btn bg-rose-600 text-white px-5 py-2 font-black';
+      okBtn.textContent = '確定執行';
+      okBtn.onclick = () => {
+        closeDialogModal();
+        onConfirm();
+      };
+
+      btnContainer.appendChild(cancelBtn);
+      btnContainer.appendChild(okBtn);
+      document.getElementById('modal-dialog').classList.remove('hidden');
+    }
+
+    function closeDialogModal() {
+      document.getElementById('modal-dialog').classList.add('hidden');
+    }
+
+    /*************************************************************************
+     * 6. MAIN MENU & SETUP RENDERING
+     *************************************************************************/
+    function renderMainMenu() {
+      const listEl = document.getElementById('menu-char-list');
+      listEl.innerHTML = '';
+
+      // Ensure valid selectedCharIds
+      const validIds = new Set(appData.map(c => c.id));
+      selectedCharIds.forEach(id => {
+        if (!validIds.has(id)) selectedCharIds.delete(id);
+      });
+      if (selectedCharIds.size === 0 && appData.length > 0) {
+        selectedCharIds.add(appData[0].id);
+      }
+
+      appData.forEach(charItem => {
+        const isSelected = selectedCharIds.has(charItem.id);
+        const card = document.createElement('div');
+        card.onclick = () => toggleSelectChar(charItem.id);
+        card.className = `pixel-btn p-3 flex items-center justify-between transition ${
+          isSelected 
+            ? 'bg-emerald-700 border-amber-400 text-white' 
+            : 'bg-slate-800 border-slate-950 text-slate-300 opacity-75'
+        }`;
+        card.innerHTML = `
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-amber-50 text-slate-950 border-2 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              ${escapeHtml(charItem.targetChar)}
+            </div>
+            <div class="text-left">
+              <div class="font-black text-base">目標字：${escapeHtml(charItem.targetChar)}</div>
+              <div class="text-xs ${isSelected ? 'text-emerald-200' : 'text-slate-400'}">共 ${charItem.words.length} 個詞語</div>
+            </div>
+          </div>
+          <div class="text-xl">${isSelected ? '✅' : '⬜'}</div>
+        `;
+        listEl.appendChild(card);
+      });
+
+      updateMenuSummary();
+    }
+
+    function toggleSelectChar(charId) {
+      playTone(600, 'square', 0.05);
+      if (selectedCharIds.has(charId)) {
+        if (selectedCharIds.size > 1) {
+          selectedCharIds.delete(charId);
+        } else {
+          showMessageModal('提示', '請至少保留選擇一個「目標單字」進行遊戲！');
+        }
+      } else {
+        selectedCharIds.add(charId);
+      }
+      renderMainMenu();
+    }
+
+    function selectAllChars(flag) {
+      playTone(600, 'square', 0.05);
+      if (flag) {
+        appData.forEach(c => selectedCharIds.add(c.id));
+      } else if (appData.length > 0) {
+        selectedCharIds.clear();
+        selectedCharIds.add(appData[0].id);
+      }
+      renderMainMenu();
+    }
+
+    function updateMenuSummary() {
+      let totalWordsAvailable = 0;
+      appData.forEach(c => {
+        if (selectedCharIds.has(c.id)) totalWordsAvailable += c.words.length;
+      });
+      const actualDraw = Math.min(setupWordCount, totalWordsAvailable);
+      document.getElementById('menu-selected-summary').textContent = 
+        `已選擇 ${selectedCharIds.size} 個目標單字（題庫共 ${totalWordsAvailable} 詞，本局將抽選 ${actualDraw} 詞）`;
+    }
+
+    function updateSetupWordCountSlider(val) {
+      playTone(580, 'square', 0.05);
+      setupWordCount = parseInt(val, 10);
+      document.getElementById('setup-word-count-display').textContent = setupWordCount;
+      updateMenuSummary();
+    }
+
+    function updateSetupTimerSlider(val) {
+      playTone(580, 'square', 0.05);
+      setupTimerSeconds = parseInt(val, 10);
+      document.getElementById('setup-timer-display').textContent = setupTimerSeconds;
+    }
+
+    /*************************************************************************
+     * 7. CORE GAME FLOW & STATE MACHINE (States 0, 1, 2, 3)
+     *************************************************************************/
+    function startGameMatch() {
+      syncTeamConfigUI();
+      const chosenChars = appData.filter(c => selectedCharIds.has(c.id) && c.words.length > 0);
+      if (chosenChars.length === 0) {
+        showMessageModal('無法開始', '所選的目標單字目前沒有任何目標詞語，請先至後台新增詞語！', '⚠️');
+        return;
+      }
+
+      let pool = [];
+      chosenChars.forEach(charObj => {
+        const shuffledWords = [...charObj.words].sort(() => Math.random() - 0.5);
+        shuffledWords.forEach(wordObj => {
+          pool.push({ charObj, wordObj });
+        });
+      });
+
+      const shuffledPool = pool.sort(() => Math.random() - 0.5).slice(0, setupWordCount);
+      const charOrderMap = new Map();
+      chosenChars.forEach((c, idx) => charOrderMap.set(c.id, idx));
+      shuffledPool.sort((a, b) => charOrderMap.get(a.charObj.id) - charOrderMap.get(b.charObj.id));
+
+      matchQueue = shuffledPool;
+      currentQueueIndex = 0;
+      introducedCharIds.clear();
+      redScore = 0;
+      blueScore = 0;
+      isPaused = false;
+      updatePauseBtnUI();
+
+      updateScoreboards();
+
+      // Switch Screen
+      document.getElementById('screen-menu').classList.add('hidden');
+      document.getElementById('screen-game').classList.remove('hidden');
+      document.getElementById('btn-back-menu').classList.remove('hidden');
+      document.getElementById('modal-final-winner').classList.add('hidden');
+      
+      // HUD Initialize
+      updateHUD();
+
+      playTone(523.25, 'square', 0.1, 0);
+      playTone(659.25, 'square', 0.15, 0.1);
+
+      loadCurrentQueueItem();
+    }
+
+    function updateHUD() {
+      if (gameState === 'MENU' || gameState === 'GAME_OVER') {
+        document.getElementById('top-left-hud').classList.add('hidden');
+        return;
+      }
+      document.getElementById('top-left-hud').classList.remove('hidden');
+      
+      const total = matchQueue.length;
+      const current = currentQueueIndex + 1;
+      document.getElementById('hud-progress-text').textContent = `${Math.min(current, total)} / ${total}`;
+      document.getElementById('hud-progress-bar').style.width = `${Math.min(current, total) / total * 100}%`;
+
+      const jumpContainer = document.getElementById('hud-char-jump');
+      jumpContainer.innerHTML = '';
+      
+      // Only show characters that have been selected for this round
+      const activeChars = appData.filter(c => selectedCharIds.has(c.id));
+      activeChars.forEach(c => {
+        const btn = document.createElement('button');
+        btn.onclick = () => jumpToChar(c.id);
+        btn.className = `w-10 h-10 rounded-full flex items-center justify-center font-black text-lg border-2 border-slate-950 shadow-md transform hover:scale-110 transition ` + 
+          (introducedCharIds.has(c.id) ? 'text-slate-900 ring-2 ring-amber-400' : 'text-slate-600 opacity-60');
+        
+        // Soccer ball gradient styling for the mini-button
+        btn.style.background = 'radial-gradient(circle at 35% 35%, #ffffff 5%, #e5e7eb 40%, #9ca3af 75%, #374151 100%)';
+        btn.innerHTML = `<span style="z-index: 10; text-shadow: 0 0 4px white;">${c.targetChar}</span>`;
+        jumpContainer.appendChild(btn);
+      });
+    }
+
+    function jumpToChar(charId) {
+      if (gameState === 'GAME_OVER' || gameState === 'MENU') return;
+      playTone(600, 'square', 0.08);
+      clearStage1Timer();
+      isPaused = false;
+      updatePauseBtnUI();
+      
+      // Find the first occurrence of this character from current position onwards, else search from start
+      let idx = matchQueue.findIndex((item, i) => item.charObj.id === charId && i >= currentQueueIndex);
+      if (idx === -1) {
+        idx = matchQueue.findIndex(item => item.charObj.id === charId);
+      }
+      
+      if (idx !== -1) {
+        currentQueueIndex = idx;
+        loadCurrentQueueItem();
+      } else {
+        showMessageModal('提示', '目前對戰中沒有包含此目標字的題目！');
+      }
+    }
+
+    function loadCurrentQueueItem() {
+      clearStage1Timer();
+      isPaused = false;
+      updatePauseBtnUI();
+      
+      document.getElementById('timeout-banner').classList.add('hidden');
+      document.getElementById('modal-state3-recap').classList.add('hidden');
+      
+      // Infinite Loop Logic: Don't automatically trigger Game Over. Wrap around to the start!
+      if (currentQueueIndex >= matchQueue.length) {
+        currentQueueIndex = 0;
+      }
+      
+      updateHUD(); // Refresh progress bar and jump logic
+
+      const currentItem = matchQueue[currentQueueIndex];
+
+      // Check if we need to show State 0: Target Character Intro
+      if (!introducedCharIds.has(currentItem.charObj.id)) {
+        introducedCharIds.add(currentItem.charObj.id);
+        enterState0Intro(currentItem.charObj);
+      } else {
+        enterState1ReadWord();
+      }
+    }
+
+    function togglePause() {
+      if (gameState !== 'STATE_1_READ') return;
+      isPaused = !isPaused;
+      updatePauseBtnUI();
+
+      if (isPaused) {
+        // Freeze
+        if (ringAnimFrame) cancelAnimationFrame(ringAnimFrame);
+        const elapsed = performance.now() - stage1StartTime;
+        pauseTimeLeft = (setupTimerSeconds * 1000) - elapsed;
+      } else {
+        // Resume
+        stage1StartTime = performance.now() - ((setupTimerSeconds * 1000) - pauseTimeLeft);
+        ringAnimFrame = requestAnimationFrame(animateRingLoop);
+      }
+    }
+
+    function updatePauseBtnUI() {
+      const btn = document.getElementById('btn-pause');
+      if (!btn) return;
+      if (isPaused) {
+        btn.innerHTML = '▶️ 繼續';
+        btn.className = 'pixel-btn bg-emerald-700 hover:bg-emerald-600 text-white px-3 py-1.5 text-xs font-bold whitespace-nowrap';
+      } else {
+        btn.innerHTML = '⏸️ 暫停';
+        btn.className = 'pixel-btn bg-sky-700 hover:bg-sky-600 text-white px-3 py-1.5 text-xs font-bold whitespace-nowrap';
+      }
+    }
+
+    /* ---------------- STATE 0: TARGET CHARACTER INTRO (簡潔版目標單字介紹) ---------------- */
+    function enterState0Intro(charObj) {
+      gameState = 'STATE_0_INTRO';
+      updateHUD();
+      document.getElementById('intro-char-text').textContent = charObj.targetChar;
+      document.getElementById('intro-char-img').src = charObj.charImageUrl || createConceptSVG(charObj.targetChar, '🌟');
+      document.getElementById('modal-state0-intro').classList.remove('hidden');
+    }
+
+    function proceedFromCharIntro() {
+      playTone(659.25, 'square', 0.08);
+      document.getElementById('modal-state0-intro').classList.add('hidden');
+      enterState1ReadWord();
+    }
+
+    /* ---------------- STATE 1: STAGE 1 (讀出詞語 + 圓周紅色進度條) ---------------- */
+    function enterState1ReadWord() {
+      gameState = 'STATE_1_READ';
+      const { wordObj } = matchQueue[currentQueueIndex];
+
+      // Fix flex/hidden toggle issue by strictly swapping classes
+      const jumbo1 = document.getElementById('jumbotron-stage1');
+      const jumbo2 = document.getElementById('jumbotron-stage2');
+      jumbo1.classList.remove('hidden');
+      jumbo1.classList.add('flex');
+      jumbo2.classList.add('hidden');
+      jumbo2.classList.remove('flex');
+
+      // Reset Soccer Ball in Center Pitch
+      const wrapper = document.getElementById('soccer-ball-wrapper');
+      wrapper.className = 'anim-float';
+      document.getElementById('ball-word-text').textContent = wordObj.word;
+      document.getElementById('ball-shadow').style.transform = 'scale(1)';
+      document.getElementById('ball-shadow').style.opacity = '1';
+
+      // Show Circular Red Perimeter Ring
+      const svgRing = document.getElementById('ball-countdown-svg');
+      const ringCircle = document.getElementById('ball-ring-progress');
+      svgRing.classList.remove('hidden');
+      ringCircle.style.strokeDashoffset = '0';
+
+      // Foolproof Controls: Show ✅ buttons, Hide ⚽ buttons
+      document.getElementById('btn-red-tick').classList.remove('hidden');
+      document.getElementById('btn-blue-tick').classList.remove('hidden');
+      document.getElementById('btn-red-tick').disabled = false;
+      document.getElementById('btn-blue-tick').disabled = false;
+
+      document.getElementById('btn-red-shoot').classList.add('hidden');
+      document.getElementById('btn-blue-shoot').classList.add('hidden');
+
+      // Start Smooth Circular Perimeter Countdown
+      startStage1Timer();
+    }
+
+    function startStage1Timer() {
+      clearStage1Timer();
+      isPaused = false;
+      updatePauseBtnUI();
+      
+      const durationMs = setupTimerSeconds * 1000;
+      stage1StartTime = performance.now();
+      lastTickSec = setupTimerSeconds;
+      ringAnimFrame = requestAnimationFrame(animateRingLoop);
+    }
+
+    function animateRingLoop(now) {
+      if (gameState !== 'STATE_1_READ' || isPaused) return;
+      const durationMs = setupTimerSeconds * 1000;
+      const elapsed = now - stage1StartTime;
+      const fractionRemaining = Math.max(0, 1 - elapsed / durationMs);
+      const offset = RING_CIRCUMFERENCE * (1 - fractionRemaining);
+      
+      const ringCircle = document.getElementById('ball-ring-progress');
+      if (ringCircle) ringCircle.style.strokeDashoffset = String(offset);
+
+      const secLeft = Math.ceil((durationMs - elapsed) / 1000);
+      if (secLeft < lastTickSec && secLeft > 0) {
+        lastTickSec = secLeft;
+        sfxTick(secLeft <= 3);
+      }
+
+      if (elapsed >= durationMs) {
+        if (ringCircle) ringCircle.style.strokeDashoffset = String(RING_CIRCUMFERENCE);
+        clearStage1Timer();
+        handleStage1Timeout();
+        return;
+      }
+      ringAnimFrame = requestAnimationFrame(animateRingLoop);
+    }
+
+    function clearStage1Timer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+      if (ringAnimFrame) {
+        cancelAnimationFrame(ringAnimFrame);
+        ringAnimFrame = null;
+      }
+    }
+
+    // When Therapist Presses ✅ Before Timeout
+    function handleStage1Success(team) {
+      if (gameState !== 'STATE_1_READ') return;
+      clearStage1Timer();
+      isPaused = false;
+      updatePauseBtnUI();
+
+      document.getElementById('btn-red-tick').disabled = true;
+      document.getElementById('btn-blue-tick').disabled = true;
+
+      sfxStage1Correct();
+
+      // Add +1 point to team
+      addTeamScore(team, 1);
+
+      // Hide Circular Red Ring & play ball 'hop in place' animation
+      document.getElementById('ball-countdown-svg').classList.add('hidden');
+      const wrapper = document.getElementById('soccer-ball-wrapper');
+      wrapper.className = 'anim-hop'; // The ball simply hops slightly and lands exactly back at the center
+      document.getElementById('ball-shadow').style.transform = 'scale(1.25)';
+
+      // Automatically enter Stage 2 after hop lands
+      setTimeout(() => {
+        enterState2ExplainMeaning();
+      }, 800);
+    }
+
+    // When Timer Hits 0 Without Pressing ✅ (報趴消失爆炸動畫)
+    function handleStage1Timeout() {
+      if (gameState !== 'STATE_1_READ') return;
+      gameState = 'STAGE_1_VOID';
+
+      document.getElementById('btn-red-tick').disabled = true;
+      document.getElementById('btn-blue-tick').disabled = true;
+
+      sfxExplode();
+      
+      // Retry Logic: Push the failed word to the back of the queue
+      const failedItem = matchQueue[currentQueueIndex];
+      matchQueue.push(failedItem);
+      updateHUD(); // refresh HUD to reflect new total
+
+      // Trigger ball explosion animation
+      const wrapper = document.getElementById('soccer-ball-wrapper');
+      wrapper.className = 'anim-explode';
+      document.getElementById('ball-shadow').style.opacity = '0';
+      document.getElementById('timeout-banner').classList.remove('hidden');
+
+      // Move to next item after explosion
+      setTimeout(() => {
+        currentQueueIndex++;
+        loadCurrentQueueItem();
+      }, 1400);
+    }
+
+    /* ---------------- STATE 2: STAGE 2 (看圖解釋詞義，無文字提示) ---------------- */
+    function enterState2ExplainMeaning() {
+      gameState = 'STATE_2_EXPLAIN';
+      const { wordObj } = matchQueue[currentQueueIndex];
+
+      // Keep Ball in place with Word Visible & Red Ring Hidden
+      const wrapper = document.getElementById('soccer-ball-wrapper');
+      wrapper.className = 'state-in-place';
+      document.getElementById('ball-countdown-svg').classList.add('hidden');
+
+      // Light Up Top Jumbotron with [Image 1] ➕ [Image 2] ONLY (No text labels)
+      // Fix flex/hidden toggle issue by strictly swapping classes
+      const jumbo1 = document.getElementById('jumbotron-stage1');
+      const jumbo2 = document.getElementById('jumbotron-stage2');
+      jumbo1.classList.add('hidden');
+      jumbo1.classList.remove('flex');
+      jumbo2.classList.remove('hidden');
+      jumbo2.classList.add('flex');
+
+      document.getElementById('jumbo-img1').src = wordObj.img1Url || createConceptSVG('', '🖼️');
+      document.getElementById('jumbo-img2').src = wordObj.img2Url || createConceptSVG('', '🖼️');
+
+      // Foolproof Controls: Hide ✅ buttons, Show ⚽ Shoot buttons
+      document.getElementById('btn-red-tick').classList.add('hidden');
+      document.getElementById('btn-blue-tick').classList.add('hidden');
+
+      const redShoot = document.getElementById('btn-red-shoot');
+      const blueShoot = document.getElementById('btn-blue-shoot');
+      redShoot.classList.remove('hidden');
+      blueShoot.classList.remove('hidden');
+      redShoot.disabled = false;
+      blueShoot.disabled = false;
+    }
+
+    // When Student Explains Meaning & Therapist Clicks ⚽ Shoot
+    function handleStage2Shoot(team) {
+      if (gameState !== 'STATE_2_EXPLAIN') return;
+      gameState = 'STAGE_2_SHOOTING';
+
+      document.getElementById('btn-red-shoot').disabled = true;
+      document.getElementById('btn-blue-shoot').disabled = true;
+
+      sfxShootAndGoal();
+
+      const wrapper = document.getElementById('soccer-ball-wrapper');
+      document.getElementById('ball-shadow').style.opacity = '0.2';
+
+      // Pick a random animation (1, 2, or 3) for diverse shooting
+      const randomAnimNum = Math.floor(Math.random() * 3) + 1;
+      
+      // Parabolic Trajectory into OPPONENT'S Goal:
+      const targetGoalId = team === 'red' ? 'goal-right' : 'goal-left';
+      wrapper.className = team === 'red' ? `anim-shoot-right-${randomAnimNum}` : `anim-shoot-left-${randomAnimNum}`;
+
+      // Trigger Goal Net Shake & +2 Score upon ball impact
+      setTimeout(() => {
+        const goalEl = document.getElementById(targetGoalId);
+        goalEl.classList.add('goal-hit');
+        addTeamScore(team, 2);
+
+        setTimeout(() => {
+          goalEl.classList.remove('goal-hit');
+          enterState3Celebration(team);
+        }, 550);
+      }, 720);
+    }
+
+    /* ---------------- STATE 3: CELEBRATION & RECAP (無構詞公式) ---------------- */
+    function enterState3Celebration(scoringTeam) {
+      gameState = 'STATE_3_RECAP';
+      const { wordObj } = matchQueue[currentQueueIndex];
+
+      // Fire Fullscreen Confetti via canvas-confetti
+      if (typeof confetti === 'function') {
+        confetti({
+          particleCount: 110,
+          spread: 80,
+          origin: { y: 0.55 }
+        });
+      }
+
+      document.getElementById('recap-summary-img').src = wordObj.summaryUrl || createConceptSVG('', '🌟');
+      document.getElementById('recap-word-text').textContent = wordObj.word;
+
+      document.getElementById('modal-state3-recap').classList.remove('hidden');
+    }
+
+    function nextWordAfterRecap() {
+      playTone(600, 'square', 0.08);
+      document.getElementById('modal-state3-recap').classList.add('hidden');
+      currentQueueIndex++;
+      loadCurrentQueueItem();
+    }
+
+    function skipCurrentWord() {
+      if (gameState !== 'STATE_1_READ' && gameState !== 'STATE_2_EXPLAIN') return;
+      clearStage1Timer();
+      isPaused = false;
+      updatePauseBtnUI();
+      playTone(400, 'square', 0.08);
+      currentQueueIndex++;
+      loadCurrentQueueItem();
+    }
+
+    /* ---------------- FINAL WINNER SCREEN (提前結算或手動完成) ---------------- */
+    function enterGameOverState() {
+      clearStage1Timer();
+      gameState = 'GAME_OVER';
+      updateHUD(); // will hide HUD
+      
+      if (typeof confetti === 'function') {
+        confetti({ particleCount: 160, spread: 110, origin: { y: 0.5 } });
+      }
+
+      const leftPal = COLOR_PALETTES[teamConfig.left.color] || COLOR_PALETTES.red;
+      const rightPal = COLOR_PALETTES[teamConfig.right.color] || COLOR_PALETTES.blue;
+
+      document.getElementById('final-label-left').textContent = teamConfig.left.name;
+      document.getElementById('final-label-right').textContent = teamConfig.right.name;
+      document.getElementById('final-box-left').className = `bg-slate-950 border-4 ${leftPal.panelBorder} p-4`;
+      document.getElementById('final-box-right').className = `bg-slate-950 border-4 ${rightPal.panelBorder} p-4`;
+
+      document.getElementById('final-score-red').textContent = redScore;
+      document.getElementById('final-score-blue').textContent = blueScore;
+
+      const titleEl = document.getElementById('final-winner-title');
+      if (redScore > blueScore) {
+        titleEl.textContent = `🎉 恭喜【${teamConfig.left.name}】獲勝！`;
+        titleEl.className = `text-2xl font-black ${leftPal.winnerText} mb-6`;
+      } else if (blueScore > redScore) {
+        titleEl.textContent = `🎉 恭喜【${teamConfig.right.name}】獲勝！`;
+        titleEl.className = `text-2xl font-black ${rightPal.winnerText} mb-6`;
+      } else {
+        titleEl.textContent = '🤝 雙方平手！';
+        titleEl.className = 'text-2xl font-black text-amber-300 mb-6';
+      }
+
+      document.getElementById('modal-state0-intro').classList.add('hidden');
+      document.getElementById('modal-state3-recap').classList.add('hidden');
+      document.getElementById('modal-final-winner').classList.remove('hidden');
+    }
+
+    function replaySameSettings() {
+      startGameMatch();
+    }
+
+    function confirmReturnToMenu() {
+      if (gameState === 'MENU') return;
+      showConfirmModal('返回主頁', '確定要結束目前對戰並返回主頁設定嗎？', () => {
+        returnToMainMenu();
+      });
+    }
+
+    function returnToMainMenu() {
+      clearStage1Timer();
+      gameState = 'MENU';
+      updateHUD(); // will hide HUD
+      
+      document.getElementById('screen-game').classList.add('hidden');
+      document.getElementById('modal-state0-intro').classList.add('hidden');
+      document.getElementById('modal-state3-recap').classList.add('hidden');
+      document.getElementById('modal-final-winner').classList.add('hidden');
+      document.getElementById('btn-back-menu').classList.add('hidden');
+      document.getElementById('screen-menu').classList.remove('hidden');
+      renderMainMenu();
+    }
+
+    /* ---------------- SCOREBOARD HELPERS ---------------- */
+    function addTeamScore(team, delta) {
+      if (team === 'red') {
+        redScore += delta;
+      } else {
+        blueScore += delta;
+      }
+      updateScoreboards();
+
+      const popEl = document.getElementById(team === 'red' ? 'score-pop-red' : 'score-pop-blue');
+      popEl.textContent = `+${delta}`;
+      popEl.classList.remove('hidden', 'score-pop');
+      void popEl.offsetWidth; // trigger reflow
+      popEl.classList.add('score-pop');
+    }
+
+    function updateScoreboards() {
+      document.getElementById('score-red').textContent = redScore;
+      document.getElementById('score-blue').textContent = blueScore;
+    }
+
+    /*************************************************************************
+     * 8. ADMIN PANEL (PASSWORD 0303, HIERARCHICAL CRUD, JSON & EXCEL IMPORT/EXPORT)
+     *************************************************************************/
+    function openPasswordModal() {
+      document.getElementById('admin-pwd-input').value = '';
+      document.getElementById('admin-pwd-error').classList.add('hidden');
+      document.getElementById('modal-password').classList.remove('hidden');
+      setTimeout(() => document.getElementById('admin-pwd-input').focus(), 80);
+    }
+
+    function closePasswordModal() {
+      document.getElementById('modal-password').classList.add('hidden');
+    }
+
+    function verifyAdminPassword() {
+      const val = document.getElementById('admin-pwd-input').value.trim();
+      if (val === '0303') {
+        playTone(784, 'square', 0.1);
+        closePasswordModal();
+        openAdminPanel();
+      } else {
+        sfxExplode();
+        document.getElementById('admin-pwd-error').classList.remove('hidden');
+      }
+    }
+
+    function openAdminPanel() {
+      if (!adminSelectedCharId && appData.length > 0) {
+        adminSelectedCharId = appData[0].id;
+      }
+      renderAdminPanel();
+      document.getElementById('screen-admin').classList.remove('hidden');
+    }
+
+    function closeAdminPanel() {
+      document.getElementById('screen-admin').classList.add('hidden');
+      renderMainMenu();
+    }
+
+    function saveSiteTitle() {
+      const newTitle = document.getElementById('admin-site-title').value.trim();
+      if (newTitle) {
+        document.title = newTitle;
+        localStorage.setItem('AMA_SITE_TITLE', newTitle);
+        const mainTitle = document.getElementById('main-site-title');
+        if(mainTitle) mainTitle.textContent = newTitle;
+        showMessageModal('已儲存', '網站標題已更新！此設定也會包裝在下載的完整 HTML 檔案中。', '✅');
+      } else {
+        showMessageModal('標題空白', '請輸入標題！', '⚠️');
+      }
+    }
+
+    function renderAdminPanel() {
+      const charListEl = document.getElementById('admin-char-list');
+      charListEl.innerHTML = '';
+
+      if (appData.length === 0) {
+        adminSelectedCharId = null;
+      } else if (!appData.some(c => c.id === adminSelectedCharId)) {
+        adminSelectedCharId = appData[0].id;
+      }
+
+      appData.forEach(charItem => {
+        const active = charItem.id === adminSelectedCharId;
+        const item = document.createElement('div');
+        item.className = `p-3 border-2 transition cursor-pointer flex items-center justify-between ${
+          active ? 'bg-slate-800 border-amber-400' : 'bg-slate-900 border-slate-800 hover:border-slate-600'
+        }`;
+        item.onclick = () => {
+          adminSelectedCharId = charItem.id;
+          renderAdminPanel();
+        };
+
+        item.innerHTML = `
+          <div class="flex items-center gap-3">
+            <img src="${charItem.charImageUrl || createFallbackSVG(charItem.targetChar)}" 
+                 onerror="this.src=createFallbackSVG('圖')"
+                 class="w-12 h-12 object-cover border-2 border-slate-950 bg-slate-950 shrink-0" />
+            <div>
+              <div class="font-black text-lg text-amber-300">目標單字：${escapeHtml(charItem.targetChar)}</div>
+              <div class="text-xs text-slate-400">包含 ${charItem.words.length} 個目標詞語</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5" onclick="event.stopPropagation()">
+            <button onclick="openCharFormModal('${charItem.id}')" class="bg-slate-700 hover:bg-slate-600 text-xs px-2.5 py-1.5 font-bold">編輯</button>
+            <button onclick="deleteCharItem('${charItem.id}')" class="bg-rose-800 hover:bg-rose-700 text-xs px-2.5 py-1.5 font-bold">刪除</button>
+          </div>
+        `;
+        charListEl.appendChild(item);
+      });
+
+      // Render Right Column: Words of Selected Character
+      const wordListEl = document.getElementById('admin-word-list');
+      wordListEl.innerHTML = '';
+      const selectedChar = appData.find(c => c.id === adminSelectedCharId);
+
+      if (!selectedChar) {
+        document.getElementById('admin-current-char-title').textContent = '（尚未選擇）';
+        wordListEl.innerHTML = `<div class="text-slate-500 text-center py-12">請先在左側新增或選擇一個「目標單字」</div>`;
+        return;
+      }
+
+      document.getElementById('admin-current-char-title').textContent = selectedChar.targetChar;
+
+      if (selectedChar.words.length === 0) {
+        wordListEl.innerHTML = `<div class="text-slate-400 text-center py-12 border-2 border-dashed border-slate-800">目前「${escapeHtml(selectedChar.targetChar)}」尚無目標詞語，請點擊右上角「➕ 新增目標詞語」。</div>`;
+        return;
+      }
+
+      selectedChar.words.forEach((w, idx) => {
+        const card = document.createElement('div');
+        card.className = 'bg-slate-900 border-2 border-slate-800 p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4';
+        card.innerHTML = `
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-white text-slate-950 border-4 border-slate-950 flex items-center justify-center font-black text-2xl shrink-0">
+              ${escapeHtml(w.word)}
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="${w.img1Url || createFallbackSVG('圖1')}" onerror="this.src=createFallbackSVG('圖1')" class="w-20 h-14 object-cover" />
+                <span class="text-[11px] text-amber-300 mt-1 truncate max-w-[85px]">圖1: ${escapeHtml(w.label1 || '字義1')}</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="${w.img2Url || createFallbackSVG('圖2')}" onerror="this.src=createFallbackSVG('圖2')" class="w-20 h-14 object-cover" />
+                <span class="text-[11px] text-sky-300 mt-1 truncate max-w-[85px]">圖2: ${escapeHtml(w.label2 || '字義2')}</span>
+              </div>
+              <div class="flex flex-col items-center bg-slate-950 p-1.5 border border-slate-800">
+                <img src="${w.summaryUrl || createFallbackSVG('總結圖')}" onerror="this.src=createFallbackSVG('總結圖')" class="w-20 h-14 object-cover" />
+                <span class="text-[11px] text-emerald-300 mt-1">總結圖</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2 self-end md:self-center">
+            <button onclick="openWordFormModal(${idx})" class="pixel-btn bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 text-xs font-bold">✏️ 編輯</button>
+            <button onclick="deleteWordItem(${idx})" class="pixel-btn bg-rose-800 hover:bg-rose-700 text-white px-3 py-1.5 text-xs font-bold">🗑️ 刪除</button>
+          </div>
+        `;
+        wordListEl.appendChild(card);
+      });
+    }
+
+    /* ---------------- CRUD FOR LEVEL 1: TARGET CHARACTER ---------------- */
+    function openCharFormModal(charId = null) {
+      const modal = document.getElementById('modal-char-form');
+      if (charId) {
+        const item = appData.find(c => c.id === charId);
+        if (!item) return;
+        document.getElementById('char-form-title').textContent = `編輯目標單字：${item.targetChar}`;
+        document.getElementById('char-form-id').value = item.id;
+        document.getElementById('char-form-text').value = item.targetChar;
+        document.getElementById('char-form-img').value = item.charImageUrl.startsWith('data:image/svg') ? '' : item.charImageUrl;
+        document.getElementById('char-form-desc').value = item.description || '';
+      } else {
+        document.getElementById('char-form-title').textContent = '新增目標單字';
+        document.getElementById('char-form-id').value = '';
+        document.getElementById('char-form-text').value = '';
+        document.getElementById('char-form-img').value = '';
+        document.getElementById('char-form-desc').value = '';
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function closeCharFormModal() {
+      document.getElementById('modal-char-form').classList.add('hidden');
+    }
+
+    function saveCharForm() {
+      const id = document.getElementById('char-form-id').value;
+      const targetChar = document.getElementById('char-form-text').value.trim();
+      const rawImg = document.getElementById('char-form-img').value.trim();
+      const description = document.getElementById('char-form-desc').value.trim();
+
+      if (!targetChar) {
+        showMessageModal('欄位未填', '請輸入「目標單字」！', '⚠️');
+        return;
+      }
+
+      const charImageUrl = rawImg || createConceptSVG(`目標字：${targetChar}`, '🌟', '#065f46', '#0f172a');
+
+      if (id) {
+        const item = appData.find(c => c.id === id);
+        if (item) {
+          item.targetChar = targetChar;
+          item.charImageUrl = charImageUrl;
+          item.description = description;
+        }
+      } else {
+        const newId = 'char_' + Date.now();
+        appData.push({
+          id: newId,
+          targetChar,
+          charImageUrl,
+          description: description || `認識目標單字「${targetChar}」`,
+          words: []
+        });
+        adminSelectedCharId = newId;
+      }
+
+      saveDataToStorage();
+      closeCharFormModal();
+      renderAdminPanel();
+    }
+
+    function deleteCharItem(charId) {
+      const item = appData.find(c => c.id === charId);
+      if (!item) return;
+      showConfirmModal(
+        '刪除目標單字',
+        `確定要刪除目標單字「${item.targetChar}」及其底下所有 ${item.words.length} 個目標詞語嗎？`,
+        () => {
+          appData = appData.filter(c => c.id !== charId);
+          saveDataToStorage();
+          renderAdminPanel();
+        }
+      );
+    }
+
+    /* ---------------- CRUD FOR LEVEL 2: TARGET WORD ---------------- */
+    function openWordFormModal(wordIndex = null) {
+      const selectedChar = appData.find(c => c.id === adminSelectedCharId);
+      if (!selectedChar) {
+        showMessageModal('提示', '請先在左側選擇一個目標單字！');
+        return;
+      }
+
+      if (wordIndex !== null && selectedChar.words[wordIndex]) {
+        const w = selectedChar.words[wordIndex];
+        document.getElementById('word-form-title').textContent = `編輯目標詞語：${w.word}`;
+        document.getElementById('word-form-index').value = wordIndex;
+        document.getElementById('word-form-text').value = w.word;
+        document.getElementById('word-form-label1').value = w.label1 || '';
+        document.getElementById('word-form-img1').value = (w.img1Url && !w.img1Url.startsWith('data:image/svg')) ? w.img1Url : '';
+        document.getElementById('word-form-label2').value = w.label2 || '';
+        document.getElementById('word-form-img2').value = (w.img2Url && !w.img2Url.startsWith('data:image/svg')) ? w.img2Url : '';
+        document.getElementById('word-form-summary').value = (w.summaryUrl && !w.summaryUrl.startsWith('data:image/svg')) ? w.summaryUrl : '';
+      } else {
+        document.getElementById('word-form-title').textContent = `新增「${selectedChar.targetChar}」的目標詞語`;
+        document.getElementById('word-form-index').value = '';
+        document.getElementById('word-form-text').value = '';
+        document.getElementById('word-form-label1').value = '';
+        document.getElementById('word-form-img1').value = '';
+        document.getElementById('word-form-label2').value = '';
+        document.getElementById('word-form-img2').value = '';
+        document.getElementById('word-form-summary').value = '';
+      }
+
+      document.getElementById('modal-word-form').classList.remove('hidden');
+    }
+
+    function closeWordFormModal() {
+      document.getElementById('modal-word-form').classList.add('hidden');
+    }
+
+    function saveWordForm() {
+      const selectedChar = appData.find(c => c.id === adminSelectedCharId);
+      if (!selectedChar) return;
+
+      const idxStr = document.getElementById('word-form-index').value;
+      const word = document.getElementById('word-form-text').value.trim();
+      const label1 = document.getElementById('word-form-label1').value.trim() || (word[0] ? `${word[0]}的意思` : '圖1');
+      const rawImg1 = document.getElementById('word-form-img1').value.trim();
+      const label2 = document.getElementById('word-form-label2').value.trim() || (word[1] ? `${word[1]}的意思` : '圖2');
+      const rawImg2 = document.getElementById('word-form-img2').value.trim();
+      const rawSummary = document.getElementById('word-form-summary').value.trim();
+
+      if (!word) {
+        showMessageModal('欄位未填', '請輸入「目標詞語」！', '⚠️');
+        return;
+      }
+
+      const newWordObj = {
+        word,
+        label1,
+        img1Url: rawImg1 || createConceptSVG(label1, '1️⃣', '#1e3a8a', '#0f172a'),
+        label2,
+        img2Url: rawImg2 || createConceptSVG(label2, '2️⃣', '#065f46', '#0f172a'),
+        summaryUrl: rawSummary || createConceptSVG(word, '🌟', '#7c2d12', '#0f172a')
+      };
+
+      if (idxStr !== '') {
+        selectedChar.words[parseInt(idxStr, 10)] = newWordObj;
+      } else {
+        selectedChar.words.push(newWordObj);
+      }
+
+      saveDataToStorage();
+      closeWordFormModal();
+      renderAdminPanel();
+    }
+
+    function deleteWordItem(wordIdx) {
+      const selectedChar = appData.find(c => c.id === adminSelectedCharId);
+      if (!selectedChar || !selectedChar.words[wordIdx]) return;
+      const w = selectedChar.words[wordIdx];
+
+      showConfirmModal('刪除目標詞語', `確定要刪除目標詞語「${w.word}」嗎？`, () => {
+        selectedChar.words.splice(wordIdx, 1);
+        saveDataToStorage();
+        renderAdminPanel();
+      });
+    }
+
+    function resetToDefaultData() {
+      showConfirmModal('還原預設題庫', '確定要還原為系統預設的「景、聲、電」題庫嗎？您自訂的修改將會被覆蓋。', () => {
+        appData = getDefaultDataset();
+        adminSelectedCharId = appData[0].id;
+        saveDataToStorage();
+        renderAdminPanel();
+        showMessageModal('已還原', '已成功還原為系統預設題庫！', '✅');
+      });
+    }
+
+    /*************************************************************************
+     * 9. PORTABLE FULL HTML DOWNLOAD, JSON & EXCEL (.xlsx) EXPORT / IMPORT
+     *************************************************************************/
+    function downloadUpdatedFullHTML() {
+      try {
+        // Clone current document structure and clean up runtime state so the downloaded file opens fresh on Main Menu
+        const clone = document.documentElement.cloneNode(true);
+
+        const menuSec = clone.querySelector('#screen-menu');
+        const gameSec = clone.querySelector('#screen-game');
+        const adminSec = clone.querySelector('#screen-admin');
+        const backBtn = clone.querySelector('#btn-back-menu');
+        if (menuSec) menuSec.classList.remove('hidden');
+        if (gameSec) gameSec.classList.add('hidden');
+        if (adminSec) adminSec.classList.add('hidden');
+        if (backBtn) backBtn.classList.add('hidden');
+
+        ['#modal-password', '#modal-char-form', '#modal-word-form', '#modal-dialog', '#modal-state0-intro', '#modal-state3-recap', '#modal-final-winner', '#top-left-hud'].forEach(sel => {
+          const el = clone.querySelector(sel);
+          if (el) el.classList.add('hidden');
+        });
+
+        let htmlContent = '<!DOCTYPE html>\n' + clone.outerHTML;
+
+        // Ensure downloaded page incorporates the custom Title currently set
+        const currentTitle = document.title;
+        htmlContent = htmlContent.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(currentTitle)}</title>`);
+
+        // Inject latest appData and teamConfig directly into the portable script block
+        const replacementBlock = `/* __PORTABLE_DATA_START__ */\n    const PORTABLE_INITIAL_DATA = ${JSON.stringify(appData, null, 2)};\n    const PORTABLE_INITIAL_TEAMS = ${JSON.stringify(teamConfig, null, 2)};\n    /* __PORTABLE_DATA_END__ */`;
+
+        htmlContent = htmlContent.replace(
+          /\/\* __PORTABLE_DATA_START__ \*\/[\s\S]*?\/\* __PORTABLE_DATA_END__ \*\//,
+          replacementBlock
+        );
+
+        // Also update STORAGE_KEY version timestamp in downloaded file so it initializes cleanly with the embedded data on any device
+        const newStorageKey = 'AMA_PIXEL_SOCCER_DATA_' + Date.now();
+        htmlContent = htmlContent.replace(
+          /const STORAGE_KEY = '[^']+';/,
+          `const STORAGE_KEY = '${newStorageKey}';`
+        );
+
+        const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `AMA_構詞意識像素足球_${new Date().toISOString().slice(0,10)}.html`;
+        a.click();
+        URL.revokeObjectURL(url);
+
+        showMessageModal('下載成功', '已下載包含最新題庫與設定的完整 HTML 檔案！您可以將此檔案傳送至任何電腦或平板直接開啟使用。', '💾');
+      } catch (err) {
+        showMessageModal('下載失敗', '產生 HTML 檔案時發生錯誤：' + err.message, '❌');
+      }
+    }
+
+    function exportDataJSON() {
+      const dataStr = JSON.stringify(appData, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `AMA_構詞意識題庫_${new Date().toISOString().slice(0,10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importDataJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (!Array.isArray(parsed)) throw new Error('格式不正確');
+          appData = parsed;
+          saveDataToStorage();
+          renderAdminPanel();
+          showMessageModal('匯入成功', `已成功匯入 ${appData.length} 個目標單字題庫！`, '✅');
+        } catch (err) {
+          showMessageModal('匯入失敗', 'JSON 檔案格式不正確，請確認檔案內容。', '❌');
+        }
+        event.target.value = '';
+      };
+      reader.readAsText(file);
+    }
+
+    function exportDataExcel() {
+      if (typeof XLSX === 'undefined') {
+        showMessageModal('錯誤', 'SheetJS (xlsx) 載入失敗，請檢查網路連線或改用 JSON 匯出。', '⚠️');
+        return;
+      }
+
+      const rows = [];
+      appData.forEach(charItem => {
+        if (charItem.words.length === 0) {
+          rows.push({
+            '目標單字': charItem.targetChar,
+            '目標單字圖片URL': charItem.charImageUrl.startsWith('data:image/svg') ? '' : charItem.charImageUrl,
+            '目標單字說明': charItem.description || '',
+            '目標詞語': '',
+            '圖1說明(解釋字1)': '',
+            '圖1_URL': '',
+            '圖2說明(解釋字2)': '',
+            '圖2_URL': '',
+            '目標詞語總結圖_URL': ''
+          });
+        } else {
+          charItem.words.forEach(w => {
+            rows.push({
+              '目標單字': charItem.targetChar,
+              '目標單字圖片URL': charItem.charImageUrl.startsWith('data:image/svg') ? '' : charItem.charImageUrl,
+              '目標單字說明': charItem.description || '',
+              '目標詞語': w.word,
+              '圖1說明(解釋字1)': w.label1 || '',
+              '圖1_URL': w.img1Url.startsWith('data:image/svg') ? '' : w.img1Url,
+              '圖2說明(解釋字2)': w.label2 || '',
+              '圖2_URL': w.img2Url.startsWith('data:image/svg') ? '' : w.img2Url,
+              '目標詞語總結圖_URL': w.summaryUrl.startsWith('data:image/svg') ? '' : w.summaryUrl
+            });
+          });
+        }
+      });
+
+      const worksheet = XLSX.utils.json_to_sheet(rows);
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, '構詞意識題庫');
+      XLSX.writeFile(workbook, `AMA_構詞意識題庫_${new Date().toISOString().slice(0,10)}.xlsx`);
+    }
+
+    function importDataExcel(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (typeof XLSX === 'undefined') {
+        showMessageModal('錯誤', 'SheetJS 尚未載入。', '⚠️');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = new Uint8Array(e.target.result);
+          const workbook = XLSX.read(data, { type: 'array' });
+          const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+          const rows = XLSX.utils.sheet_to_json(firstSheet, { defval: '' });
+
+          const charMap = new Map();
+          rows.forEach((row, idx) => {
+            const targetChar = String(row['目標單字'] || '').trim();
+            if (!targetChar) return;
+
+            if (!charMap.has(targetChar)) {
+              const rawCharImg = String(row['目標單字圖片URL'] || '').trim();
+              charMap.set(targetChar, {
+                id: 'char_xlsx_' + idx + '_' + Date.now(),
+                targetChar,
+                charImageUrl: rawCharImg || createConceptSVG(`目標字：${targetChar}`, '🌟', '#065f46', '#0f172a'),
+                description: String(row['目標單字說明'] || `認識目標單字「${targetChar}」`).trim(),
+                words: []
+              });
+            }
+
+            const wordText = String(row['目標詞語'] || '').trim();
+            if (wordText) {
+              const label1 = String(row['圖1說明(解釋字1)'] || wordText[0] || '圖1').trim();
+              const rawImg1 = String(row['圖1_URL'] || '').trim();
+              const label2 = String(row['圖2說明(解釋字2)'] || wordText[1] || '圖2').trim();
+              const rawImg2 = String(row['圖2_URL'] || '').trim();
+              const rawSummary = String(row['目標詞語總結圖_URL'] || '').trim();
+
+              charMap.get(targetChar).words.push({
+                word: wordText,
+                label1,
+                img1Url: rawImg1 || createConceptSVG(label1, '1️⃣', '#1e3a8a', '#0f172a'),
+                label2,
+                img2Url: rawImg2 || createConceptSVG(label2, '2️⃣', '#065f46', '#0f172a'),
+                summaryUrl: rawSummary || createConceptSVG(wordText, '🌟', '#7c2d12', '#0f172a')
+              });
+            }
+          });
+
+          const newDataset = Array.from(charMap.values());
+          if (newDataset.length === 0) {
+            throw new Error('Excel 檔案中找不到有效「目標單字」欄位');
+          }
+
+          appData = newDataset;
+          adminSelectedCharId = appData[0].id;
+          saveDataToStorage();
+          renderAdminPanel();
+          showMessageModal('Excel 匯入成功', `已成功從 Excel 匯入 ${newDataset.length} 個目標單字！`, '📊');
+        } catch (err) {
+          showMessageModal('Excel 匯入失敗', err.message || '請確認欄位名稱與匯出格式一致。', '❌');
+        }
+        event.target.value = '';
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    /*************************************************************************
+     * 10. INITIALIZATION ON WINDOW LOAD
+     *************************************************************************/
+    window.onload = function () {
+      loadDataFromStorage();
+      renderMainMenu();
+    };
+  </script>
+
+
+  
+  
+  
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>
